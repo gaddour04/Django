@@ -1,0 +1,2047 @@
+{% load static %}
+<!--
+	Author: W3layouts
+	Author URL: http://w3layouts.com
+	License: Creative Commons Attribution 3.0 Unported
+	License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+
+
+	
+	
+	
+
+{% include "navbar.html" %}
+
+<body>
+
+	
+	<h2 class="magic-title u-m-md u-hyphen-initial c-extra-large@sm c-extra-large@md u-txt-center u-txt-uppercase">DECOUVREZ LA NOUVELLE COLLECTION </h2>
+
+
+	<div class="top-brands" id="brands">
+		<div class="container-fluid">
+			
+			<div class="sliderfig brands-agile-grids">
+				<div class="nbs-flexisel-container"><div class="nbs-flexisel-inner"><ul class="nbs-flexisel-ul" id="flexiselDemo1" style="left: -400px; display: block;">			
+					
+					
+					
+					
+				{% for product in new %}	
+				<li class="nbs-flexisel-item" style="width: 400px;">
+						
+						<img class="article-magic1 loading" alt="" src="{{product.image1.url}}" data-was-processed="true">
+						
+						<a href="">
+
+						<p class="carouselktiba">{{product.name}}</p>
+						 <p class="carouselktiba2">Decouvrir</p>
+						<p class="ktiba">le produit</p></a>
+
+
+					</li>
+
+					{%endfor%}
+					</ul>
+					<div class="nbs-flexisel-nav-left" style="top: 90px;">
+						<img src="images/brand1.jpg">
+					</div>
+					<div class="nbs-flexisel-nav-right" style="top: 90px;"></div>
+				</div></div>
+			</div>
+			
+		</div>
+	</div>
+
+	<!--<section>
+
+            <h2 class="magic-title u-m-md u-hyphen-initial c-extra-large@sm c-extra-large@md u-txt-center u-txt-uppercase">DECOUVREZ LA NOUVELLE COLLECTION </h2>
+            <div class="collection u-flex u-flex-wrap">
+                                                                                <div class="collection-item">
+                            <a class="u-txt-no-underline" href="https://www.afflelou.com/lunettes-de-vue/tm40-to01-4720-ecaille.html">
+                                <img class="article-magic loading" alt="" src="images/TM40TO014720.png" data-was-processed="true">
+                                <div class="a"><ul >
+                                	<li><p class="magic-landing magic-landing-desc u-txt-uppercase">Magic 40 BlueBlock</p></li>
+                                	<li><p class="magic-landing magic-landing-desc u-txt-uppercase "></p><img class="mx-auto d-block" src="images/Capture.PNG" width="80px" height="20px;"></li>
+                                </ul></div>
+                                
+                            </a>
+
+                        </div>
+                                            <div class="collection-item">
+                            <a class="u-txt-no-underline" href="https://www.afflelou.com/lunettes-de-vue-femme/tm39-to01-4719-ecaille.html">
+                                <img class="article-magic loading" alt="" src="https://www.afflelou.com/fstrz/r/s/www.afflelou.com/img/magic-landing/montures/TM39TO014719.png?frz-v=805" data-was-processed="true">
+                                 <div class="a"><ul >
+                                	<li><p class="magic-landing magic-landing-desc u-txt-uppercase">Magic 40 BlueBlock</p></li>
+                                	<li><p class="magic-landing magic-landing-desc u-txt-uppercase "></p><img class="mx-auto d-block" src="images/Capture.PNG" width="80px" height="20px;"></li>
+                                </ul></div>
+                            </a>
+
+                        </div>
+                                            <div class="collection-item">
+                            <a class="u-txt-no-underline" href="https://www.afflelou.com/lunettes-de-vue-homme/tm38-bk01-5417-noir.html">
+                                <img class="article-magic loading" alt="" src="https://www.afflelou.com/fstrz/r/s/www.afflelou.com/img/magic-landing/montures/TM38BK015417.png?frz-v=805" data-was-processed="true">
+                                 <div class="a"><ul >
+                                	<li><p class="magic-landing magic-landing-desc u-txt-uppercase">Magic 40 BlueBlock</p></li>
+                                	<li><p class="magic-landing magic-landing-desc u-txt-uppercase "></p><img class="mx-auto d-block" src="images/Capture.PNG" width="80px" height="20px;"></li>
+                                </ul></div>
+                            </a>
+                        </div>
+                                            <div class="collection-item">
+                            <a class="u-txt-no-underline" href="https://www.afflelou.com/lunettes-de-vue-femme/tm44-wh01-4920-blanc.html">
+                                <img class="article-magic loading" alt="" src="https://www.afflelou.com/fstrz/r/s/www.afflelou.com/img/magic-landing/montures/TM44WH014920.png?frz-v=805" data-was-processed="true">
+                                 <div class="a"><ul >
+                                	<li><p class="magic-landing magic-landing-desc u-txt-uppercase">Magic 40 BlueBlock</p></li>
+                                	<li><p class="magic-landing magic-landing-desc u-txt-uppercase "></p><img class="mx-auto d-block" src="images/Capture.PNG" width="80px" height="20px;"></li>
+                                </ul></div>
+                            </a>
+                        </div>
+                                            <div class="collection-item">
+                            <a class="u-txt-no-underline" href="https://www.afflelou.com/lunettes-de-vue-homme/tm32-bk01-5316-noir.html">
+                                <img class="article-magic loading" alt="" src="https://www.afflelou.com/fstrz/r/s/www.afflelou.com/img/magic-landing/montures/TM32BK015316.png?frz-v=805" data-was-processed="true">
+                                 <div class="a"><ul >
+                                	<li><p class="magic-landing magic-landing-desc u-txt-uppercase">Magic 40 BlueBlock</p></li>
+                                	<li><p class="magic-landing magic-landing-desc u-txt-uppercase "></p><img class="mx-auto d-block" src="images/Capture.PNG" width="80px" height="20px;"></li>
+                                </ul></div>
+                            </a>
+                        </div>
+                                            <div class="collection-item">
+                            <a class="u-txt-no-underline" href="https://www.afflelou.com/lunettes-de-vue/tm43-bk01-5417-noir.html">
+                                <img class="article-magic loading" alt="" src="https://www.afflelou.com/fstrz/r/s/www.afflelou.com/img/magic-landing/montures/TM43BK015417.png?frz-v=805" data-was-processed="true">
+                                 <div class="a"><ul >
+                                	<li><p class="magic-landing magic-landing-desc u-txt-uppercase">Magic 40 BlueBlock</p></li>
+                                	<li><p class="magic-landing magic-landing-desc u-txt-uppercase "></p><img class="mx-auto d-block" src="images/Capture.PNG" width="80px" height="20px;"></li>
+                                </ul></div>
+                            </a>
+                        </div>
+                                            <div class="collection-item">
+                            <a class="u-txt-no-underline" href="https://www.afflelou.com/lunettes-de-vue/tm34-to01-5021-ecaille.html">
+                                <img class="article-magic loading" alt="" src="https://www.afflelou.com/fstrz/r/s/www.afflelou.com/img/magic-landing/montures/TM34TO015021.png?frz-v=805" data-was-processed="true">
+                                 <div class="a"><ul >
+                                	<li><p class="magic-landing magic-landing-desc u-txt-uppercase">Magic 40 BlueBlock</p></li>
+                                	<li><p class="magic-landing magic-landing-desc u-txt-uppercase "></p><img class="mx-auto d-block" src="images/Capture.PNG" width="80px" height="20px;"></li>
+                                </ul></div>
+                            </a>
+                        </div>
+                                            <div class="collection-item">
+                            <a class="u-txt-no-underline" href="https://www.afflelou.com/lunettes-de-vue-femme/tm37-gr01-4919-vert.html">
+                                <img class="article-magic loading" alt="" src="https://www.afflelou.com/fstrz/r/s/www.afflelou.com/img/magic-landing/montures/TM37GR014919.png?frz-v=805" data-was-processed="true">
+                                 <div class="a"><ul >
+                                	<li><p class="magic-landing magic-landing-desc u-txt-uppercase">Magic 40 BlueBlock</p></li>
+                                	<li><p class="magic-landing magic-landing-desc u-txt-uppercase "></p><img class="mx-auto d-block" src="images/Capture.PNG" width="80px" height="20px;"></li>
+                                </ul></div>
+                            </a>
+                        </div>-->
+                                               <!-- </div>-->
+                        <!--<div class="magic-button u-txt-center u-pb-md u-flex-column@sm">
+                <a class="c-btn c-btn--secondary c-btn--secondary-magic aa" href="https://www.afflelou.com/lunettes-de-vue/montures-magic/">voir toutes les montures</a>-->
+           <!-- </div>
+        </section>-->
+<section>
+	<h1 class="magic-landing u-txt-h1 u-color-primary u-txt-uppercase@sm u-txt-center u-p-md">Quelle que soit votre correction, changez de clip… changez de style !</h1>
+            <div class="u-flex@lg">
+                <article class="u-p-sm u-w40@lg u-flex-item-last">
+                    
+                    <p class="magic-landing">Tout change en un clip avec MAGIC ! À tout moment de la journée, faites de vos lunettes un accessoire unique :</p>
+<ul>
+	<li class="magic-landing">
+		<p class="u-txt-bold">Besoin de protéger vos yeux devant les écrans ?</p>
+		<p>Pour protéger vos yeux des rayons nocifs de la lumière bleue provenant des écrans (téléphone, tablette, ordinateur…), avec MAGIC vous avez le choix.</p>
+		<p>- Vous n’avez pas besoin de correction ? Un filtre BlueBlock (anti-lumière bleue) est déjà intégré sur les verres de vos MAGIC.</p>
+		<p>- Vous avez une correction ? 2 options possibles : intégrer le filtre BlueBlock directement sur vos verres correcteurs, ou optez pour le clip BlueBlock.</p><br>
+	</li>
+</ul>
+ <div class="u-hidden@sm" id="article-landing-2" data-role="panel">
+	<ul>
+		<li class="magic-landing">
+			<p class="u-txt-bold">Envie de soleil ? <a href="https://www.afflelou.com/collection-afflelou-magic/clips-magic/sun/"><span class="u-txt-underline">Clip Sun</span></a> ou <a href="https://www.afflelou.com/collection-afflelou-magic/clips-magic/clip-polarise/"><span class="u-txt-underline">Clip Polarized</span></a></p>
+			<p>Pour protéger vos yeux du soleil, avec des effets miroités ou dégradés.</p>
+			<p>Choisissez le niveau de protection anti-UV qui vous convient :</p>
+			<p>- Sun Catégorie 3 : Protection efficace dans le cadre d’un ensoleillement moyen.</p>
+			<p>- Sun Catégorie 4 : Au top de la protection dans le cadre d’une luminosité extrême (ex : réverbération sur glace et neige). Attention, ne convient pas pour la conduite automobile.</p>
+			<p>- Polarized : Idéal dans un environnement à forte luminosité (ex : été en vacances à la mer, à la plage ou au sport d’hiver).</p><br>
+		</li>
+		<li class="magic-landing">
+			<p class="u-txt-bold">Besoin de ne louper aucun détail pour un travail minutieux ? <a href="https://www.afflelou.com/collection-afflelou-magic/clips-magic/precision/"><span class="u-txt-underline">Clip Précision</span></a></p>
+			<p>Pour la vision de près avec un effet loupe. Idéal pour la lecture de près ou tous les travaux qui demandent de la précision et de l’attention.</p>
+			<p>2 corrections possibles : +0,75 ou +2.</p><br>
+		</li>
+		<li class="magic-landing">
+			<p class="u-txt-bold">Une séance de cinéma improvisée ? <a href="https://www.afflelou.com/collection-afflelou-magic/clips-magic/3d/"><span class="u-txt-underline">Clip 3D</span></a></p>
+			<p>Des verres qui permettent de regarder les films en 3D grâce à 2 technologies : le Real et l’iMax. Avec ce clip, regardez un film en 3D tout en étant stylé !</p><br>
+		</li>
+		<li class="magic-landing">
+			<p class="u-txt-bold">Besoin de confort et de sécurité pour conduire la nuit ? <a href="https://www.afflelou.com/collection-afflelou-magic/clips-magic/nightdrive/"><span class="u-txt-underline">Clip Nightdrive</span></a></p>
+			<p>Un verre légèrement teinté jaune pour un confort de conduite optimal la nuit grâce à sa technologie anti-reflet et anti-éblouissement. </p><br>
+		</li>
+		<li class="magic-landing">
+			<p class="u-txt-bold">Envie de varier les styles ? <a href="https://www.afflelou.com/collection-afflelou-magic/clips-magic/oversize/"><span class="u-txt-underline">Clips Tendances</span></a></p>
+			<p>Un large choix de clips solaires pour s’adapter à toutes vos envies : aux formes over size, cœur, sertis de strass…</p><br>
+		</li>
+	</ul>
+	<p class="magic-landing u-mt-n">MAGIC : toutes vos lunettes réunies en une seule ! Autant d’occasions de céder à toutes vos envies !</p>
+<p class="magic-landing u-mt-n">C’est MAGIC ! </p>
+</div>
+<button class="u-hidden@md u-hidden@lg c-news-preview__more magic-landing u-hi" aria-hidden="true" type="button" data-component="toggle-util" data-target="#article-landing-2" data-toggle-text="Reduire -">En savoir +</button>
+                </article>
+                <picture class="u-flex-item-first">
+                                            <img class="magic-landing u-w80@md u-mt-sm u-mb-md loading" style="" alt="" src="https://www.afflelou.com/fstrz/r/s/www.afflelou.com/img/magic-landing/visual_clip_sun_men.png?frz-v=805" data-was-processed="true">
+                                    </picture>
+            </div>
+                       
+        </section>
+        <section class="o-container u-mt-xl">
+    <div class="o-collections-accordion" data-component="collections" data-active-container="true">
+                                                            <div class="o-collections-accordion__tab" data-role="tab">
+                <div class="o-collections-accordion__media c-collection-item__head" style="background-image: url('https://www.afflelou.com/fstrz/r/s/www.afflelou.com/img/collections/lunettes-soleil.jpg?frz-v=805')">
+                    <a class="o-collections-accordion__media__inner c-collection-item__head__inner u-txt-no-underline" href="https://www.afflelou.com/lunettes-de-soleil/">
+                        <h2 class="c-collection-item__head__title">Lunettes de soleil</h2>
+                        <span class="c-collection-item__head__subtitle">-&nbsp;collection&nbsp;-</span>
+                                                                                                    <span class="c-collection-item__head__link u-hidden@sm">TOUT VOIR</span>
+                        <div class="c-collection-item__head__cta"><mark class="svgbox"><svg xmlns="http://www.w3.org/2000/svg" style="enable-background:new 0 0 28 28;" viewBox="0 0 28 28" x="0px" y="0px" xmlns:xml="http://www.w3.org/XML/1998/namespace" xml:space="preserve" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+<rect class="c-icon-plus__y" x="12" y="1" width="4" height="26" />
+<rect class="c-icon-plus__x" transform="matrix(-1.83697e-016, 1, -1, -1.83697e-016, 28, 1.77636e-015)" x="12" y="1" width="4" height="26" />
+</svg>
+</mark></div>
+                    </a>
+                </div>
+            </div>
+            <div class="o-collections-accordion__tabpanel" data-role="tabpanel">
+                <div class="o-collections-accordion__content">
+                    <div class="c-collection-item__content">
+                        <div class="c-collection-item__content__title">La collection solaire</div>
+                        <div class="c-collection-item__content__text">
+                            Quelles soient aviateurs, rondes, modernes ou classiques, les lunettes de soleil restent un indispensable à posséder dès que le soleil se montre.<br>Afflelou interprètent les dernières tendances pour vous présenter plusieurs collections de montures solaires et vous donner un style impeccable pour l'été et tout au long de l'année.<br>Afin de conserver un confort quotidien, Afflelou adaptent vos lunettes de soleil à votre vue et propose différents teintes de verres en fonction de vos besoins et activités.
+                        </div>
+                        <div class="c-collection-item__content__bottom">
+                            <a class="c-btn" href="https://www.afflelou.com/lunettes-de-soleil/">Voir La collection solaire</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                                                            <div class="o-collections-accordion__tab" data-role="tab">
+                <div class="o-collections-accordion__media c-collection-item__head" style="background-image: url('https://www.afflelou.com/fstrz/r/s/www.afflelou.com/img/collections/lunettes-vue.jpg?frz-v=805')">
+                    <a class="o-collections-accordion__media__inner c-collection-item__head__inner u-txt-no-underline" href="https://www.afflelou.com/lunettes-de-vue/">
+                        <h2 class="c-collection-item__head__title">Lunettes de vue</h2>
+                        <span class="c-collection-item__head__subtitle">-&nbsp;collection&nbsp;-</span>
+                                                                                                    <span class="c-collection-item__head__link u-hidden@sm">TOUT VOIR</span>
+                        <div class="c-collection-item__head__cta"><mark class="svgbox"><svg xmlns="http://www.w3.org/2000/svg" style="enable-background:new 0 0 28 28;" viewBox="0 0 28 28" x="0px" y="0px" xmlns:xml="http://www.w3.org/XML/1998/namespace" xml:space="preserve" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+<rect class="c-icon-plus__y" x="12" y="1" width="4" height="26" />
+<rect class="c-icon-plus__x" transform="matrix(-1.83697e-016, 1, -1, -1.83697e-016, 28, 1.77636e-015)" x="12" y="1" width="4" height="26" />
+</svg>
+</mark></div>
+                    </a>
+                </div>
+            </div>
+            <div class="o-collections-accordion__tabpanel" data-role="tabpanel">
+                <div class="o-collections-accordion__content">
+                    <div class="c-collection-item__content">
+                        <div class="c-collection-item__content__title">La collection optique</div>
+                        <div class="c-collection-item__content__text">
+                            Découvrez les collections de lunettes de vue Afflelou et profitez de nos services en ligne ou chez votre opticien afin de trouver la monture la plus adaptée à vos besoins.<br>Peu importe votre défaut visuel, nous saurons vous apporter un choix de monture et surtout des verres adaptés.<br>Formes, couleurs et matières, Afflelou innove pour chacune de ses collections de montures pour femme, homme ou enfants et propose ses plus belles créations rien que pour vos yeux.
+                        </div>
+                        <div class="c-collection-item__content__bottom">
+                            <a class="c-btn" href="https://www.afflelou.com/lunettes-de-vue/">Voir La collection optique</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                                                            <div class="o-collections-accordion__tab" data-role="tab">
+                <div class="o-collections-accordion__media c-collection-item__head" style="background-image: url('https://www.afflelou.com/fstrz/r/s/www.afflelou.com/img/collections/lentilles.jpg?frz-v=805')">
+                    <a class="o-collections-accordion__media__inner c-collection-item__head__inner u-txt-no-underline" href="https://www.afflelou.com/lentilles-de-contact/">
+                        <h2 class="c-collection-item__head__title">Lentilles</h2>
+                        <span class="c-collection-item__head__subtitle">-&nbsp;collection&nbsp;-</span>
+                                                                                                    <span class="c-collection-item__head__link u-hidden@sm">TOUT VOIR</span>
+                        <div class="c-collection-item__head__cta"><mark class="svgbox"><svg xmlns="http://www.w3.org/2000/svg" style="enable-background:new 0 0 28 28;" viewBox="0 0 28 28" x="0px" y="0px" xmlns:xml="http://www.w3.org/XML/1998/namespace" xml:space="preserve" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+<rect class="c-icon-plus__y" x="12" y="1" width="4" height="26" />
+<rect class="c-icon-plus__x" transform="matrix(-1.83697e-016, 1, -1, -1.83697e-016, 28, 1.77636e-015)" x="12" y="1" width="4" height="26" />
+</svg>
+</mark></div>
+                    </a>
+                </div>
+            </div>
+            <div class="o-collections-accordion__tabpanel" data-role="tabpanel">
+                <div class="o-collections-accordion__content">
+                    <div class="c-collection-item__content">
+                        <div class="c-collection-item__content__title">Les lentilles de contact</div>
+                        <div class="c-collection-item__content__text">
+                            Afflelou répond à l'ensemble de vos besoins visuels et s'adresse donc également aux porteurs de lentilles de contact.<br>Afin de s'assurer de votre confort visuel, Afflelou travaille avec les plus grands fabricants de lentilles et fait évoluer sa gamme tout au long de l'année.<br>Découvrez les lentilles de contact journalières, bi-mensuelles, mensuelles ou annuelles aux meilleurs prix et profitez des innovations Afflelou grâce à la collection Ephémères.
+                        </div>
+                        <div class="c-collection-item__content__bottom">
+                            <a class="c-btn" href="https://www.afflelou.com/lentilles-de-contact/">Voir Les lentilles de contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+</section>
+	
+			<!--<img src="images/virtual-try-girl.gif" class="img-fluid" >-->
+			
+
+		
+	
+	<!--<section class="banner-bottom services" id="services">
+        <div class="backgroundred">
+        <div class="container">
+            <div class="row inner-sec">
+                <div class="col-lg-4 service-in text-left aos-init aos-animate" data-aos="zoom-in">
+                    <div class="card">
+                        <div class="card-body">
+                            
+                            <img width="330" class="card-text" src="images/s7.jpg">
+                            <div class="shopnowajax">
+                            <div class="clients_more-buttn">
+                  <a href="shop.html">Shop Now</a>
+               </div>
+               </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 service-in text-left aos-init aos-animate" data-aos="zoom-in">
+                    <div class="card">
+                        <div class="card-body">
+                            
+                            <img width="330" class="card-text" src="images/s6.jpg">
+                            <div class="shopnowajax">
+                            <div class="clients_more-buttn">
+                  <a href="shop.html">Shop Now</a>
+               </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class="col-lg-4 service-in text-left aos-init aos-animate" data-aos="zoom-in">
+                    <div class="card">
+                        <div class="card-body">
+                            
+                            </div>
+                           <img width="330" class="ajax" src="images/s5.jpg">
+                           <div class="shopnowajax">
+                           <div class="clients_more-buttn">
+                  <a href="shop.html">Shop Now</a>
+               </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            </div>
+        </div>
+        </section>-->
+        <div class="o-grid o-grid--2 o-grid--1@md c-optical-online">
+    <div class="o-grid__item c-optical-online__content u-hidden@md u-hidden@sm u-txt-right">
+        <picture>
+            <img class="c-optical-online__content-img loading img-fluid" alt="" src="https://www.afflelou.com/fstrz/r/s/www.afflelou.com/img/store/footer_image.jpg?frz-v=805" data-was-processed="true">
+        </picture>
+    </div>
+    <div class="o-grid__item u-pr-xl@lg u-m-xl@sm u-m-xl@md">
+        <h1 class="c-optical-online__title">
+            Opticien en ligne
+        </h1>
+        <p class="c-optical-online__text u-hyphen-initial">
+                            Afflelou présente Afflelou.com. Achetez vos lunettes de vue et vos lunettes de soleil en ligne. Notre catalogue vous propose de découvrir des gammes complètes de lunettes femmes, hommes et enfants.<br>
+                L’ensemble des montures peuvent être essayées en ligne et adaptées à votre vue par nos opticiens.<br>
+                Découvrez les plus grandes marques de lunettes de soleil (Ray Ban, Gucci, Dior, Prada, etc…) et de lentilles de contact (Acuvue, Biofinity, Air Optix) aux meilleurs prix. <br>
+                Afflelou.com c'est aussi la possibilité de retrouver plus de 900 opticiens en France proches de chez vous et partout dans le monde.<br>
+                Des équipes à votre service partout en France, des opticiens à Paris, à Lyon, à Marseille et toujours plus proches de chez vous.<br>
+                                </p>
+    </div>
+</div>
+<section class="o-container u-p-lg">
+	<h2 class="magic-title u-m-md u-hyphen-initial c-extra-large@sm c-extra-large@md u-txt-center u-txt-uppercase">catalogue de lunettes de soleil en ligne </h2>
+        
+        <div class="c-brands o-container">
+            <ul class="c-brands__list">
+                                    <li class="c-brands__list-item u-mb-lg u-mt-lg">
+                        <a class="u-txt-no-underline" href="https://www.afflelou.com/lunettes-de-soleil/afflelou/">
+                            <img class="u-block loading" alt="Afflelou" src="data:image/png;base64,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" data-was-processed="true">
+                        </a>
+                    </li>
+                                    <li class="c-brands__list-item u-mb-lg u-mt-lg">
+                        <a class="u-txt-no-underline" href="https://www.afflelou.com/lunettes-de-soleil/hugo-boss/">
+                            <img class="u-block loading" alt="Boss" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGEAAAAiCAMAAAB4FEdTAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABOUExURUxpcSMfICMfICMfICMfICMfICMfICMfICMfICMfICMfICMfICMfICMfICMfICMfICMfICMfICMfICMfICMfICMfICMfICMfICMfICMfIAKDEeIAAAAZdFJOUwBz1N3KtIh7vzMGJGiSqvdL7j5VEOVeGp5uoHV8AAADwElEQVRIx81XRxbkKAw1GSfAEXP/i7bIYFfPm2VrU5igr/ihBnlhCiJBKCHPMg8fOVjYgc7X/ITIhcmmJRq77fQi+NKYmyl874vzosZxNEjCSJpejdBOImMW5dzTwR+XU7u1+wqHMJrS7Cwdvmc7osu5a40HuEdA6ZQf80bNTpxLFp60bPNinLuTEQDuaBzbzam0AXldcxmJNM38x1HtzJuCYHAjj8+iFAQgtjiSTmdvBh+dYJ1oEW7/QRo7y4qPAHyu1cKnrhCH846rzq6/EEzIii12Ot2GXlYHwVlcF8ZkFeDqpiD0XxHmGjLWIgQPowZISs5DdCJbXfIQAPffUXJTMgxkaRFsLQTa1IevCFar5ileTOzrw9MUky+RaEQRKMGU07Do8DINHyfdxvuuahFm7TsiGaCblDSJcKaG09d8a8OZZp06phdCCMZkNigkUbLnzeltVNVFmZWBI2cT+SxXdSQgEGAN4n9R7zHpicJnMiV/okWZ20S/I8ljGwSGkOAPtBSVGRv9DSFFMaY1CS1u3FuDbF5RSnZrVBHwD4TSy6OqykiBOPlVp7/VGoIf8Zb/jlKsDIGzrmZ2WkqSQv91CLFcQwXtPzIdVtduas+OdBQ+cx1n+Qch6A2fp/tW64sYk99h9gU82Jgm/EGw1WX5sWzAhTZEu8BzAdwtBYSW0R+EU5dkhsviHt4NFXmn5dBojAy/7Sz6idD4MPgGeYa3VXPiJftaYEFXx2M6ckyPEIsJlfH2bmmeM9Ky7pjOiOYCiibK9x0XQ5orSPR5PZt2k10ATUqP6MjbM9vxRrA+DXps8Jp6VU234Y53WXJ77S7FJRlEa09Ptwdgc5csPNV2e/rOWCq18coJ61Qc8wAstjhRSjEKlEJ5fyN4Zlh3e/rnCW474VCwe3sWc6+Xo/kJNK4ksNxxCOq24Nd97F7MAnKbefo+yMYHXliUXMy8Fs5dSFjC9OmMGhcFLzWM2TH8fznn+Rz+YTnmwaTaseCXKXUkmowI/nnPjojbykG8hHfnd50WfhoKYpP5dpiGXC4TlqVBYbzq8YVAKM+kNeuH5fvh1ne+8Wa3SN8dl1q2RIsGGvLiuQDBnD2XLNT/66YY6LpfyTEKjZ+pFbljtrnRkfVDSLpOWg+gKZJ2MjIIlapnBQ2PfiFIqmhCuCAGWyaRnZbSnSVGKUosg45nfYXvNlPP7sapp0Cvlhe7uZts5hC+wqMqqZAQCUgEvgeZL4+VUJZTxokqHSawZO9MP1jKnH4laf5LYDZF07GZMCaGP3lEYGB2HVquAAAAAElFTkSuQmCC" data-was-processed="true">
+                        </a>
+                    </li>
+                                    <li class="c-brands__list-item u-mb-lg u-mt-lg">
+                        <a class="u-txt-no-underline" href="https://www.afflelou.com/lunettes-de-soleil/burberry/">
+                            <img class="u-block loading" alt="Burberry" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJ0AAAAYCAMAAADXhQ+PAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABLUExURf///93d3R8gH8DAwP///6+wr0xNTP///wAAAAgIB25ubvr6+hEREe/v7zc3Nnl5ec7OzoeHh5mZmaWlpVtbW0REQ+bm5rm5uS0tLUTGu+UAAAAIdFJOU/L////////llea+fwAAA8FJREFUSMfNl9t2rCAMQEdBCyJeUNH//9KTCwGczkzP6lPTFyYQshNIsI+vx9+Vr4eO/dGzHHunSbYDdJHHbocfAQaDLOv7ueG52nRj1VJWoRoNQ1Ydw8mrfF+WrehouUBxpD20Bp/9NGj9eCymkt7h5IDDROBwvMOgrdfNNNfcTD2qTnOTHl3dFBR0rFUWQvC8e/JJ/k0AuAe4sJaXWebQq7HGCl0LPyAMPcG8iCGNbmwxtabFyFTezUhY882QVvmRLEQ3sxtrDs4/7RF0prOjHXnf5hNdDtcYJXRgatlUvafLhpbSTnRFZaIY0tW6cHTpTGfWGONC/tcPdGZX6jy7XcJEOjBt4tKLqSKAJYlqmM5MYKjUioFYz3RmRlVHlrj/gYMxSjRnRUfMZPORLrAO/WG8RMdXmdwJXadrwdU9DzFBaECeFOsAjxLF+dw13zTEyHTigpnf0q3iBOiWRBcy3SZ02ze6I40tb+LH7FMHGLY46ChnyyDnWujQhRtSFD/mbjd8QJnOhaRhuuBYvHvK3ZYyW+fuwIOXEVeKSXNSFe11XYgx+Y90+wYSDj6CVBXZNKa0Qp20LKMSugsNNwh/NKNLdANtli879BluAekeVnRSPf1HurrMlltHwcMrdLlkha6u2fV7zVLW+ZApda1+QYc+xu7/+t1873fUZLb3dMVy0rnf5c2CXNGDD1Y90fFJkI/zp9xhcFyVfLLFtJOTZbFPuUPP/MiU3CGvygUUx+pc66pwTrtz5AuMdPKq6JpuGobBSu3kqkBT1XLpUVWsPpI0UhW2BcPW5DMkugM3Szc4P7C156eOQljw1Kwml026wFVHWaXh3zoKP7DqXUeZ0gOVqpM27Zjm1h731Kv0t47CLQcnqWnuGZipptRvacDx1XSeg1TpiXxBV7Yq/Q4G8Od/oOuqRha1s3LJ9WllfaZT+W4QXVfSDuM3b8WUW/aY6ULugPMPdAO8n2eX2zRf5D2EweRPh8nIfb04hkRHpuecPiGI7pgHEV/TrZLYQqdbUzrIG7q6H4UUpS3tKOo6d+UC1R0l5eDeUegGFDqqf3ygK7rtVqWf6Gz6XuQ7Lt0oHVTJHe9xPnVjQylW5tbd7I0O7jVfaD+a3OWuGugVXZFRooDPqSRTJ53FSKV41F/u/m087i++jTF3+KUrZzexzptCt6TNUjs2uVsQne+KqFI9egn7cexrDuSEefmhYBy8rk1PNo3dXcDrssGstFtQbYt2ONW4stnGHww07mKh078Qp38p7u0v93LPx5/+j/EfhMRlKyTPNHYAAAAASUVORK5CYII=" data-was-processed="true">
+                        </a>
+                    </li>
+                                    <li class="c-brands__list-item u-mb-lg u-mt-lg">
+                        <a class="u-txt-no-underline" href="https://www.afflelou.com/lunettes-de-soleil/dior/">
+                            <img class="u-block loading" alt="Dior" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAAAkCAMAAAAkYj0PAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABjUExURf///xcXFw0NDfn5+f///2NjYzc3N9jY2P///wAAAD4+PsHBwfPz8/7+/qGhoaurq3V1dVFRUe/v787OzktLS21tbUZGRrS0tIqKin19fcjIyOnp6eDg4CQkJFpaWi8vL5eXl5I0nwEAAAAJdFJOU/L////////+5Wt7uPMAAAI7SURBVEjHtZbZloMgDIZdsI4gKCru2/s/5UAoiJ05R3tKc8XmRwx/CMFP8AX7CVC68qZdS2WiBWt4yeocfWJBMO2DaDJtDee8wVsI7b7+gBroxqJIDzOckwTI5FOsOGEVuVQjfPoMm7xiESKRHApH31iUQryJbyzqgDv5xiJQyGa7bM+9YCdwl+kO5XKL2AdWuxvq9nw/0lfYznG3UsqYvWBpBOp9KgM/Oi+xRWiFKFC/SkCohyjUvrGFqwV/WALY3jd2BOzwHW8ttjoOb+6HJGEnwdFKOUJuYDs3CGMbmuxNeYZLsUnxHVccWwSKsRyKL7HMHFlMBvlFFtvdmNkVGvO+ykpQ6nJQ3BdYgVUpCmMT8eH4GzlLe6GufTaElQwbucQ2Jh0qENsTG5p7AqEWrjgVcvkzC5bzXXEZ29hNXmawe5atZsVu7x985M0VVmdD8YLdVBSdEtIbbPPOxbigMzaPHMmpTmKwwz3s7DprsWrUeqvOnhusuIfFp1GDVTVDuNj1Pex+LpEGS6XUWvdQh7ew5KWg2yOTl3Bk0q2WS8Z3sJC3EUF/saMT3N56/h8Woojdt4d+hU1ntT2zgNuqFofW8fZVCXTSORp1hHQFY/vA4dGIj9JFn3+U6p70IlLSn8NsmfW0qqDYYlOx8nbLIrDssGXt3ecXrQcRyhWPcoc49FIAW/PIoh66lJWtYqwl0dhqHOs6nXKwCayS9ueZMZFRLUrJqKdoVzZtUthdSVrleTUSHZvgO4/8X2mGSS6PUNLiAAAAAElFTkSuQmCC" data-was-processed="true">
+                        </a>
+                    </li>
+                                    <li class="c-brands__list-item u-mb-lg u-mt-lg">
+                        <a class="u-txt-no-underline" href="https://www.afflelou.com/lunettes-de-soleil/gucci/">
+                            <img class="u-block loading" alt="Gucci" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIwAAAAWCAMAAAAl44QpAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAADGUExURUxpcbe3tx4eHlFRUQMDA9jY2AQEBBwcHFpaWhoaGufn5xwcHAsLCykpKQ0NDUNDQ8jIyBYWFk1NTTMzMwwMDL+/v3Nzc6ioqGhoaKGhoRcXF6ampqGhoV5eXkxMTDIyMgYGBqCgoG9vb0BAQE9PT4iIiFlZWZCQkERERJCQkEhISCQkJHR0dDk5OY6OjjQ0ND4+PoKCgnd3dw0NDZSUlDIyMioqKkJCQiwsLF9fX0xMTDc3NyIiIgAAAGxsbCUlJZmZmQAAADZTLaUAAABBdFJOUwAIjRb+BPnIlNwR1O6o6L8r4aHE9DeGL3Jf7UwSiYDM80JLnrFMeS2sWJLeO6keJx52X+FpgtU+zFlktsGjk6uRJzGzFgAAAtZJREFUSMetVuliokAMHlYYFSgeYMUb8arWW6u17bab93+pDR6ryeC17fwRwph8ub5EiN3pjBa2J22rPhb8TBJ4JieCxJS87k9vkAsCCfb73BBnTmfkBFKX6UGPf5lOjzb6FsCTH27qK/wtsoslXUp9eSLIlqHCtRWfAFx/ONzkPZB+LJTISHu+DrsuXm3SbwUPbTxuH1FRXttJq3mAGtPyClAmgrbHDc0AcgcnKjpYBRVL/mhEe8Rn+rUNoG+/NgA+j+I5QIpeHAF8EEHtgxlC5Tnt35uJ6LMci0vUVgAyJJsvAFb0mwF4PpXjxSrR8wCQJIJUkiUSAEgsGvAiFM9zJC8ApHB+AaT3mirMz+ldYEzUkKES/bcKt0QkSxiqYAybBSZybH0XmE8eGCH+MDBlXnaYkDcVTB81PbJ7hbvAaJKlIAoNcTvKvNIW2ZjIYCdBU1w8V8A0QemNmE6CzsUbOzA57Knxt8DU0VL3sgZkGCjeAAZj7GnfAtNCS2+XNUQeJ/4DzLiqadrY+HEw8hYwDoI+pZVC2XGctvbzaerdAOadp/NdqegrYDrXC7h1YwEv8Z7PiBloSL+utLa+Y0/auKQp4vhDNA0FjImqGmTw4B+nHAybTRbFppKeOSITxfBUZi21YsbBjKmKSmDCjVH6zLjKOGgzel0IRv585hiyGwNGrGho6kqasmywmJwlo8mTpdNtwMmfhcZoxA5KYWJDzY6WVnzqbUPjnRgru0JdIZ6PFWDk1RXCsEjVZNPgGnFgtvvHoYb7Ae56CgmiX3K+l3bstNoMmOvnQ0/2JayUdUYYuESk9varWJctupwe9hk8vgSvFhbDGk5XtxLTeX4a6chN1QeuHQziWjNaOxvdMOyOdLDnZ9fO1ma96eIy99pU3dXN/XPVT+o6BmUxGMbzgBG2kEbBTvrVM0zRq1u2YweLUXiWTDoPju14QU5dyIsLx7FnfwEirXi+WaZw9QAAAABJRU5ErkJggg==" data-was-processed="true">
+                        </a>
+                    </li>
+                                    <li class="c-brands__list-item u-mb-lg u-mt-lg">
+                        <a class="u-txt-no-underline" href="https://www.afflelou.com/lunettes-de-soleil/guess/">
+                            <img class="u-block loading" alt="Guess" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHwAAAAWCAMAAAA1rwiwAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAwUExURUxpcSMfICMfICMfICMfICMfICMfICMfICMfICMfICMfICMfICMfICMfICMfICMfILV68SAAAAAPdFJOUwAW7WvKfUzbXosrmLc8pxjqBVQAAAJkSURBVEjHrVZJtgMhCBTn2fvf9osjdJJF8j6rllaKoUCFGAI+aSd18iCqE0dUCqZLSGqu5gLWmTTWV5RgorJs2kQhA1PbKpsLRWi9FEG2La61uzFvbcVVXYs4f8b2EEkxQG/tPLylHvUMMnbAln2MReGXo3s9brQnmNZ0JADoXFUoJkl+sGPXAiVtz5f0tbMQzcYBDNvfnywAIZk38mw8rm3PIjvY/8y0lv2xsyVH1aCHiR+OxoaZhs/gmuycmbje0HqhmbDdIE6Z4wqM8oV29i3lj+CeptfdgCUxWG9iaysIxuFqi7+AA+c60s0sNhODSIEsVj3UOK8ZTf1PkaseCJEwegSeBi2qF2d9HN3EG1GIr8Dt/sMSBrOf/NPcbEBzi9NOxmBKhC/A6xgwuXFwZDlK5trBcmwzu40fzsAeF+kL8CMPmLimzGPuQSUQjRHWoC9SxS/Ac+iS9Av4qjuLZILMcaofka+xof6h5jP4/BZ9Ba9ZT2w6+l/YbjjbWV3sU23lpB3pvA2ufupzQzvU7m1FUvvFU965yUr4DO7YsJc8uepRs3KdpHV0d7oWyu2Z9/QZPFPfgM3vJ7i/A0PdUlLwcueZHuCRVeUFXFFOGD4MH+BkiNvrMb1T4SLp6ZOl3WY5/1YvxjM4OKvoldpfD45enQ7OlkIZVM5LxBzu9ccEQDHuhZzDt1BitOmla7AmWSnvVcisevhGkAr6XOetNnorTsh9tyYyqLJ92xdD2CUA8vmOspSZ8t2hfNW3xaLKSGtdFbw2K/Sf3ZgOfIxAroELOauzKKmbdIlfdk7EgOWu6Ogf338tQVYsLAIAAAAASUVORK5CYII=" data-was-processed="true">
+                        </a>
+                    </li>
+                                    <li class="c-brands__list-item u-mb-lg u-mt-lg">
+                        <a class="u-txt-no-underline" href="https://www.afflelou.com/lunettes-de-soleil/julbo/">
+                            <img class="u-block loading" alt="Julbo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGUAAAA0CAMAAACkcAavAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABLUExURf///8nIyCwlJjcxMm9rbCAZGkdCQwgCAtfW1ouIiBMLDPv7+woCAwAAAP///wYAAJSRkaKfn7Curn16elpVVvLy8hcREuXk5Ly6ullqSZgAAAAMdFJOU/P++/3++v7y/v7y7Pl0MRIAAANcSURBVFjD5ZjbdqwgDIZFgWJLRI76/k+6gx0tzITRaedu/2vVC4p8hoSQTPfVvaYvxZwdPQ9BymHoUeKmz+3vs9LHpr6bLmtZRy6HZKCt/D+T9f1Eaa0N2O4aZrF80Mda+V39TdMpCdHfNGhKkLorlGjltqQpXsUBEUbHlhh/JtpqykGZL1CiT3eE/CYM7nGqANKU6ZwyJ3j8QoCRmgrkho2nlEUC8SqAoyYn0hQdzygqUTttaMhMe8VPJxSl6T3g03VTTDyhxASNyKRmNwIsf9FTiiQheMjI2XSAwXJCofdZQ0/OXmlTwvScsgC9X9vXPWpom/KMEhoQ+4opcnpOYcRrmFYSDZl6IF3ITiiV63OWzRI+0rMdbcowPafYh6yeJF+bkSJoU9Yzit81juNs3arik+PLaR/K6YTykhquP6LxLRQF9H7N0xspzNCQML2RYhuWyOl9FBWAPvQF5K8U5U3D8dXl8BdK5wI0DNF1hvgtJbI5iBYDwl1CfZXSLWq1WPwlAKAva/TIQ4qoKHZ+0LjJe85zyTr04ij9NI1IgRHfVlAcXJIxukFAhCXzUEFZ8HCZQvqazJFMvVta+/xDIS+7+yVvqozTveTz+iyZHpQuwEvSSfSDDDyXyucxs1OiHwvNTVnr3LoytcQXgvM9mf//pix4ACl/Oo7XvvPevYXiMYAiWWtjpZ9a5dirlAHIkh5vXTFFPHxv2bFo6BZoxEyLlXNxzf6FgslMR7IIxL2Sv9uwRwqv79LDRJ29pWmXvU7Bq2memHPqxyPOMay4sBplecNWt0vtF5qrh9gpBRfCWq1qT0Vem+eumIMZRJHLJBrGQirTG/bDYx/iCWXMoaRK32Abg5U7Lq5yXV+nzFDfSSaXk53kQZ1QZI5jX/rG5uhdbg8IjqmbZKZgRIZ1H8GOGr/Fc39iS3Yyy0fGFs3SHsIz7J3CHidMVUP5TOFyLJ74JcdxPntmKblbCLvMc1UyMJlkKy6/EmMyf9tcbhiDWwh3+NBVb4uzUtllYuMOa5OyHq0KQnBeACPwtvpWyNz19hD7qJ3z1bpmq8M+wkWOnAblrusa79swvYUw+K0Tqv7jt68vJVTrWM4fhz4HrvKPhmP/UUp1fX4M5RhOZThTyc9jSMix9evk1z8ebAlz/Cc49gAAAABJRU5ErkJggg==" data-was-processed="true">
+                        </a>
+                    </li>
+                                    <li class="c-brands__list-item u-mb-lg u-mt-lg">
+                        <a class="u-txt-no-underline" href="https://www.afflelou.com/lunettes-de-soleil/persol/">
+                            <img class="u-block loading" alt="Persol" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGMAAAA9CAMAAACOYScgAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAwUExURUxpcSEcHSMfICAcHSEcHSIeHyAcHSMfICIeHyEcHSEdHiEdHiIeHyIeHyIeHyMfIEXNW4AAAAAPdFJOUwAP5yAzxUj201h/bLSkkTYIIZUAAAQjSURBVFjDvVjZkuMwCLTuW/z/364kQJI9OaYy8fphKjVxaNQ0DfZx3HGpAlDUcedlAQyA0zdCKIB0aAB5I4YHEOOvvpMpaLXIAPE2DIMYrez5LgjRIJy4FyP8B4xIGK0e9S6MQhhNV+HOkreatybpCr6tOzqGvbEch0SMeGMLCocYEsydZtWublff910hdowivy4qnaWT2Y6PAwNcvKG1+xUXRvk2hCMMsIzxndGhtBZsglIox6ERI739sVbvOjT0bnZ51DV3joguTRj2RfzoqWQmvuqgyuSUkXjg1mtobzB0S87XlAren/UriGh7OnV4YJiwhTCe/FQ1M05i+fPzbHqYPDq6l9Yh+xbzov54jJFOeiOQx2XJiNHCJoxdafz1EC8wyq4FTQ79ROWSJkS/b2Rjpt9W8ivN9TU+svz8tkSIXPjoTmywZ2c1+0ji07XKCDlZ7ux7Sb0izPrNoWV3M0xn+prYlz5P1K+RZLnoijLw4lAVXK+vg3kfZ6wd+JmsW27qz9MU4yyKkDQ5M5DMTMIaFFhM9fzrxEjbXhYv9g0I69k6EkUx9K3pHAQvLSlqJewB5T64yiedmRhSSdtBRjKeVR6IDGwU00MnL+PKKi8FI7ssyWtjD/fAus6VEw8S6agiO1laCFGdjJvaeaCIKe4K2V6XDaZnGngPmvBTjnKWTKCm1ghRu37ibG+tT9PN7cc4ZmTPaQ2BrOHafSZdOlruyl8WkoxzeTQbGHMeC2mSRZ9AsrpFkk21V2Pg5tCnZLWf9MRWTWVPFUozHTx85nneSufSg3Uon5KLLNfsScAGcKIielWTAOznmAud3baUZXi4cuVTc1U6k8GDNYLGDY5CarIxCZf9RiT/COFsPn6b925kPWrdMMhgA2ksUEZ+nw21hfLh6Xoq95KPpCMmOb5tLOFz0YhZmSO/D5hO0hME5kevNRJP5dB0zUjAO5avrJn47BN9GlAyLxB42Mfdhwz5Cz5EeHX0CunZB5kakpkfJL1AaNfahxgjY/5uBK69Enrtaf3ftmZTglgkvUZgwYaNq0LEaA0uDOKXrsHZq5LeInAR3VbzMonxQ5tDaAn25qFJKn+H0H/eb5ViarfSpKV4aXSBvkJYVIv55X4uQi1FsE+3ZgiwdY2TU4DGnpT0e4QfQzQQhicTI7MLiRE0kvQBwpxEiokZMeV1ByeSPkJgB5VzKHS7Lu7iSeYvCKydfMzKgPGnlzekpE8Q9PZWCKWjZlfXnyR9cobCy5Vec9c6uDysJPM5wrY76W2WqGq8iWo37s/r0B1EbvvDg5V7kvRppctaEwQ8eh80SfpYS9gUkrnyP57e5ESwf3wZlPGTPD/V6OK+gTDXH9sWL3OCsBm+hMBPwmffbkqaR3B/RxgRbUp2P4T1TuYSU7DvH9bfXf8AvFJVXsXxVmgAAAAASUVORK5CYII=" data-was-processed="true">
+                        </a>
+                    </li>
+                                    <li class="c-brands__list-item u-mb-lg u-mt-lg">
+                        <a class="u-txt-no-underline" href="https://www.afflelou.com/lunettes-de-soleil/prada/">
+                            <img class="u-block loading" alt="Prada" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIUAAAAVCAMAAABfYt1NAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABRUExURUxpcQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJ1QtmkAAAAadFJOUwBPvqrlnbPSyZAOhlMIFytB3Pohd29k8V00GJacOAAAAqJJREFUSMeNVlmipCAMRGRzxbVV7n/QoQNqgthv6kv2olIksrasALIESFmtMwMcPHQp46ENV0oWDGPnCia0pJctYhoBQohRm4ouWrgEWNJr3QPTAiOdOtsA+FR46dzECZRFfyi6n8Y0bRwc6aJOQ+/aAVZoBBpMQqOK0ohvg5O1lcMzLgzh8K7r7bJ9PyUejTQ+dE1DOkMrBOUgZxyZxTzs2NMdC+g0QTDx0BCIuY1lLrSe0kz3yWG36yLm2xJUyPEZKMbaoEVofLC6ISiBRvODBdP3DgmLCsl0IgTNDe8siqdcJnTVP1iAyFOdYdE8D+w3h0/MsQgNLMb5IMq/WGxdhsUCTUulEBmv5bTQ2EyRu31nMd5PIWEhH6aq3daLp9dyLO6QzI7PDvk3xyLIVWRY1NvDU9LtbHcPr2VZ2FuKIwbXtSmL2FEjKeIGDfYUMUAHL0Y/vJZlMV/X/EoQkqBIWajV47OS1x020A0g0Et8PdxmK/+TBYfY7KlnqySBjyvNPmhkYdQVCm9gf7KY6lOKCmfQjrLQ7Q74FGkOFMKJofeoWZp0R6M9xtRrORbqyt+G++rI46IkGSXpD20w9tKpzxcLydT1dGoUH16RZTGQwTktnTNhYV5ZuDto20Fc0dYevgQGS99ey7AQlytAVi+sDZfgNCLvLOazGJDs1KHiHA265lg02DQz0rwlyb95ZTHc+WaIOfLOCxLn8rDH1D1r6gBX3i9XzGlBHnFBEhkWUQEIQ2+S7E9jaPBPwHDda4asL4orbZLaEW624+eo3qRw04zLp5u8BvVgyK/LybH0Y3bX1IBVfFy1F3TNlMLGslqLgEu1237aAMYYhcW/St8Unq+VXEn0cpf4i6pl56eNHPCdztVyxeAoDUfUu0oBuG7+Acz8bfUPODzeAAAAAElFTkSuQmCC" data-was-processed="true">
+                        </a>
+                    </li>
+                                    <li class="c-brands__list-item u-mb-lg u-mt-lg">
+                        <a class="u-txt-no-underline" href="https://www.afflelou.com/lunettes-de-soleil/ray-ban/">
+                            <img class="u-block loading" alt="Rayban" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAABFCAMAAAC2XtKTAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABdUExURf///ykpKfj4+H5+fu/v7x0dHRMTE////wAAAP///6ysrNnZ2YeHh7e3t0lJSejo6JqamsDAwFRUVMfHx+Dg4JKSkqGhodHR0TMzMwoKCl9fX2hoaD4+PnZ2dm9vb2PGmMgAAAAIdFJOU/L////////llea+fwAABLxJREFUaN7tmmdzozAQhg0IInoRIPr//5mnXRWKsSH2Gc/NnL6EZBwebXt3peT2c/vK+rn5X1q327e4/8H/LjieBmuILgfXLcWVXAsmCW3HyQPyeCU4ddFS8UWs9Dqw7VILHwIAR9eBE0q5tPw4yn8TLOwcVKgB3FwGFpHN5VMJ4OEqcEappx5zAE9XgUURFepxAjC7CAxWViq7QUSsd+qYhIynJ8FgpQrxSOfn34PDrLNQ/qwuPwNuxEfLObW6x58M67p8BM4niy5Wcmy27Zncsp47uqyCekz3wHxcUWF54RG4NJXbiyeXPEmGuK5jdge268HQEqeO43oEJ3r2AZhprcrA3idcP6wYz/gGXDqucW9AFhV6UJWiC1NZTSDTxfNdsjjI1zEOe01t+5VvI/EjcqiXkFD5YXeAYiGrrJ6xriOSqazJShziQ90SYC7czH43+pDRYCPhKVvsIps/VhhxeLQq7P3eUUgcHQYNrjydUZGtOtwSPJ0CZ8So9U69RSFGwlmCeaPNHYnpNLSef6tffbe3IA0qm7YPIzJAuxKvdRfgTGMLk1JQycHK1fwY7Pjd6rdkDDv0XA3V5lAjbwCOFdZa7HYDdvVGHwdPznfNOql55FiyIIStHUNMYMAqvKuxEMDzPsLjGnHQYt+2lmU8yTeHUl9ElRZGxQVYGrypAnfVX5zDMsaOBJsjEEamw0pbsIDjI6YrvDdgGYLR8f39GLMAe8eioME+8XReFqDZMboulwZLIUfnCvC0rpwZzOacdv3TYJmqIWpZS9DUJKA6ukxPYwLcU4/tTMgzOMb3nJgDKp0QKNseGF7rMm1VDylUkAV42Jn5obvqAip3HLLoKoWU9d6A0TwXtuuKObdvZCTFrC9zLuc6uXLuPwOLmPW73Q22G8CM4kHidQaMJAt20gTiayCbah7ZZ0YfBKMlxNo/EhAontCUC7hQgqUaRViQkE5CfYfy9MxFNDi1HpwIEkilTlaiFvfKN3uxUR3kIFL+YtgjrdQ27tFm09UDFLgQMViJbqhqFn5iy0Eix6An5NdTJoKVwJozqNxBi/0lwYyzJ6txyFJjpVDA1uwqeGG8TQFcdcuJp5dJxFEZ+V3te9h3ioUavzRXp6r8VC+MLMtVhoxYow3d9EkhDE2qtDnz3wUnoWmKuCppWcsiegdOdMh1p38NTOh8EkI1zCDPGzloULrvUNzOsyPEMZhBjugphmNZog9yVSxuswOuTt32PAOHsjxdM7OAqWo4alF8secEO0460U0egs246c5nk1rokaUSZ4AoRvRu3sWjGi1fBgcmhu48MIu3Rr5yJOkimUbxTieNX79SnLPHIyZlEighZz7x74Idut9Nzrq6nFozYhM5HqqLlCBetf3tqdkGrXvrEjU1JzcPzjIDdau9eePuuB6Wb4LF5jtzehtTn+zPG8x/Zz0QkHJxKHd2Dp39p8BsdR/Q8z0w/wQYxlG3zMyVRLcxr/skGDI5M6e5gm3B4SfAsblKCcyVSEEuBYvnhM4z3Xx6pOUnwMHquiUvttfAHwPXmysj1tE2XIPb9CNgazN/b2RpOPybw4vgo+u05MSV2zu3t49vqjh/z+D/f1u8Eux/ad2+9T8CfwDeDiMtSMBZTwAAAABJRU5ErkJggg==" data-was-processed="true">
+                        </a>
+                    </li>
+                                    <li class="c-brands__list-item u-mb-lg u-mt-lg">
+                        <a class="u-txt-no-underline" href="https://www.afflelou.com/lunettes-de-soleil/tom-ford/">
+                            <img class="u-block loading" alt="TomFord" src="data:image/png;base64,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" data-was-processed="true">
+                        </a>
+                    </li>
+                                    <li class="c-brands__list-item u-mb-lg u-mt-lg">
+                        <a class="u-txt-no-underline" href="https://www.afflelou.com/lunettes-de-soleil-femme/victoria-secret/">
+                            <img class="u-block loading" style="max-width:220px" alt="VictoriaSecret" src="https://www.afflelou.com/fstrz/r/s/www.afflelou.com/img/brands/victorias-secret.png?frz-v=805" data-was-processed="true">
+                        </a>
+                    </li>
+                            </ul>
+        </div>
+    </section>
+	<!--//banner-sec-->
+	<!--<section class="banner-bottom-wthreelayouts py-lg-5 py-3">
+		<div class="container-fluid">
+			<div class="inner-sec-shop px-lg-4 px-3">
+				<h3 class="tittle-w3layouts my-lg-4 my-4">New Arrivals for you </h3>
+				<div class="row">
+					<!-- /womens -->
+					<!--<div class="col-md-3 product-men women_two">
+						<div class="product-googles-info googles">
+							<div class="men-pro-item">
+								<div class="men-thumb-item">
+									<img src="images/s1.jpg" class="img-fluid" alt="">
+									<div class="men-cart-pro">
+										<div class="inner-men-cart-pro">
+											<a href="single.html" class="link-product-add-cart">Quick View</a>
+										</div>
+									</div>
+									<span class="product-new-top">New</span>
+								</div>
+								<div class="item-info-product">
+									<div class="info-product-price">
+										<div class="grid_meta">
+											<div class="product_price">
+												<h4>
+													<a href="single.html">Farenheit (Grey)</a>
+												</h4>
+												<div class="grid-price mt-2">
+													<span class="money ">$575.00</span>
+												</div>
+											</div>
+											<ul class="stars">
+												<li>
+													<a href="#">
+														<i class="fa fa-star" aria-hidden="true"></i>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<i class="fa fa-star" aria-hidden="true"></i>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<i class="fa fa-star" aria-hidden="true"></i>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<i class="fa fa-star" aria-hidden="true"></i>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<i class="fa fa-star-half-o" aria-hidden="true"></i>
+													</a>
+												</li>
+											</ul>
+										</div>
+										<div class="googles single-item hvr-outline-out">
+											<form action="#" method="post">
+												<input type="hidden" name="cmd" value="_cart">
+												<input type="hidden" name="add" value="1">
+												<input type="hidden" name="googles_item" value="Farenheit">
+												<input type="hidden" name="amount" value="575.00">
+												<button type="submit" class="googles-cart pgoogles-cart">
+													<i class="fas fa-cart-plus"></i>
+												</button>
+
+												
+											</form>
+
+										</div>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 product-men women_two">
+						<div class="product-googles-info googles">
+							<div class="men-pro-item">
+								<div class="men-thumb-item">
+									<img src="images/s2.jpg" class="img-fluid" alt="">
+									<div class="men-cart-pro">
+										<div class="inner-men-cart-pro">
+											<a href="single.html" class="link-product-add-cart">Quick View</a>
+										</div>
+									</div>
+									<span class="product-new-top">New</span>
+								</div>
+								<div class="item-info-product">
+
+									<div class="info-product-price">
+										<div class="grid_meta">
+											<div class="product_price">
+												<h4>
+													<a href="single.html">Opium (Grey)</a>
+												</h4>
+												<div class="grid-price mt-2">
+													<span class="money ">$325.00</span>
+												</div>
+											</div>
+											<ul class="stars">
+												<li>
+													<a href="#">
+														<i class="fa fa-star" aria-hidden="true"></i>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<i class="fa fa-star" aria-hidden="true"></i>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<i class="fa fa-star" aria-hidden="true"></i>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<i class="fa fa-star-half-o" aria-hidden="true"></i>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<i class="fa fa-star-o" aria-hidden="true"></i>
+													</a>
+												</li>
+											</ul>
+										</div>
+										<div class="googles single-item hvr-outline-out">
+											<form action="#" method="post">
+												<input type="hidden" name="cmd" value="_cart">
+												<input type="hidden" name="add" value="1">
+												<input type="hidden" name="googles_item" value="Opium (Grey)">
+												<input type="hidden" name="amount" value="325.00">
+												<button type="submit" class="googles-cart pgoogles-cart">
+													<i class="fas fa-cart-plus"></i>
+												</button>
+
+												
+											</form>
+
+										</div>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 product-men women_two">
+						<div class="product-googles-info googles">
+							<div class="men-pro-item">
+								<div class="men-thumb-item">
+									<img src="images/s3.jpg" class="img-fluid" alt="">
+									<div class="men-cart-pro">
+										<div class="inner-men-cart-pro">
+											<a href="single.html" class="link-product-add-cart">Quick View</a>
+										</div>
+									</div>
+									<span class="product-new-top">New</span>
+								</div>
+								<div class="item-info-product">
+
+									<div class="info-product-price">
+										<div class="grid_meta">
+											<div class="product_price">
+												<h4>
+													<a href="single.html">Kenneth Cole</a>
+												</h4>
+												<div class="grid-price mt-2">
+													<span class="money ">$575.00</span>
+												</div>
+											</div>
+											<ul class="stars">
+												<li>
+													<a href="#">
+														<i class="fa fa-star" aria-hidden="true"></i>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<i class="fa fa-star" aria-hidden="true"></i>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<i class="fa fa-star" aria-hidden="true"></i>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<i class="fa fa-star" aria-hidden="true"></i>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<i class="fa fa-star-half-o" aria-hidden="true"></i>
+													</a>
+												</li>
+											</ul>
+										</div>
+										<div class="googles single-item hvr-outline-out">
+											<form action="#" method="post">
+												<input type="hidden" name="cmd" value="_cart">
+												<input type="hidden" name="add" value="1">
+												<input type="hidden" name="googles_item" value="Kenneth Cole">
+												<input type="hidden" name="amount" value="575.00">
+												<button type="submit" class="googles-cart pgoogles-cart">
+													<i class="fas fa-cart-plus"></i>
+												</button>
+												
+											</form>
+
+										</div>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 product-men women_two">
+						<div class="product-googles-info googles">
+							<div class="men-pro-item">
+								<div class="men-thumb-item">
+									<img src="images/s4.jpg" class="img-fluid" alt="">
+									<div class="men-cart-pro">
+										<div class="inner-men-cart-pro">
+											<a href="single.html" class="link-product-add-cart">Quick View</a>
+										</div>
+									</div>
+									<span class="product-new-top">New</span>
+								</div>
+								<div class="item-info-product">
+
+									<div class="info-product-price">
+										<div class="grid_meta">
+											<div class="product_price">
+												<h4>
+													<a href="single.html">Farenheit Oval </a>
+												</h4>
+												<div class="grid-price mt-2">
+													<span class="money ">$325.00</span>
+												</div>
+											</div>
+											<ul class="stars">
+												<li>
+													<a href="#">
+														<i class="fa fa-star" aria-hidden="true"></i>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<i class="fa fa-star" aria-hidden="true"></i>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<i class="fa fa-star" aria-hidden="true"></i>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<i class="fa fa-star-half-o" aria-hidden="true"></i>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<i class="fa fa-star-o" aria-hidden="true"></i>
+													</a>
+												</li>
+											</ul>
+										</div>
+										<div class="googles single-item hvr-outline-out">
+											<form action="#" method="post">
+												<input type="hidden" name="cmd" value="_cart">
+												<input type="hidden" name="add" value="1">
+												<input type="hidden" name="googles_item" value="Farenheit Oval">
+												<input type="hidden" name="amount" value="325.00">
+												<button type="submit" class="googles-cart pgoogles-cart">
+													<i class="fas fa-cart-plus"></i>
+												</button>
+
+												
+											</form>
+
+										</div>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>-->
+				<!-- //womens -->
+				<!-- /mens -->
+				<!--<div class="row mt-lg-3 mt-0">-->
+					<!-- /womens -->
+					<!--<div class="col-md-3 product-men women_two">
+						<div class="product-googles-info googles">
+							<div class="men-pro-item">
+								<div class="men-thumb-item">
+									<img src="images/m1.jpg" class="img-fluid" alt="">
+									<div class="men-cart-pro">
+										<div class="inner-men-cart-pro">
+											<a href="single.html" class="link-product-add-cart">Quick View</a>
+										</div>
+									</div>
+									<span class="product-new-top">New</span>
+								</div>
+								<div class="item-info-product">
+
+									<div class="info-product-price">
+										<div class="grid_meta">
+											<div class="product_price">
+												<h4>
+													<a href="single.html">Aislin Wayfarer </a>
+												</h4>
+												<div class="grid-price mt-2">
+													<span class="money ">$775.00</span>
+												</div>
+											</div>
+											<ul class="stars">
+												<li>
+													<a href="#">
+														<i class="fa fa-star" aria-hidden="true"></i>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<i class="fa fa-star" aria-hidden="true"></i>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<i class="fa fa-star" aria-hidden="true"></i>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<i class="fa fa-star" aria-hidden="true"></i>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<i class="fa fa-star-half-o" aria-hidden="true"></i>
+													</a>
+												</li>
+											</ul>
+										</div>
+										<div class="googles single-item hvr-outline-out">
+											<form action="#" method="post">
+												<input type="hidden" name="cmd" value="_cart">
+												<input type="hidden" name="add" value="1">
+												<input type="hidden" name="googles_item" value="Aislin Wayfarer">
+												<input type="hidden" name="amount" value="775.00">
+												<button type="submit" class="googles-cart pgoogles-cart">
+													<i class="fas fa-cart-plus"></i>
+												</button>
+												
+											</form>
+
+										</div>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 product-men women_two">
+						<div class="product-googles-info googles">
+							<div class="men-pro-item">
+								<div class="men-thumb-item">
+									<img src="images/m2.jpg" class="img-fluid" alt="">
+									<div class="men-cart-pro">
+										<div class="inner-men-cart-pro">
+											<a href="single.html" class="link-product-add-cart">Quick View</a>
+										</div>
+									</div>
+									<span class="product-new-top">New</span>
+								</div>
+								<div class="item-info-product">
+
+									<div class="info-product-price">
+										<div class="grid_meta">
+											<div class="product_price">
+												<h4>
+													<a href="single.html">Azmani Round </a>
+												</h4>
+												<div class="grid-price mt-2">
+													<span class="money ">$725.00</span>
+												</div>
+											</div>
+											<ul class="stars">
+												<li>
+													<a href="#">
+														<i class="fa fa-star" aria-hidden="true"></i>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<i class="fa fa-star" aria-hidden="true"></i>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<i class="fa fa-star" aria-hidden="true"></i>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<i class="fa fa-star-half-o" aria-hidden="true"></i>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<i class="fa fa-star-o" aria-hidden="true"></i>
+													</a>
+												</li>
+											</ul>
+										</div>
+										<div class="googles single-item hvr-outline-out">
+											<form action="#" method="post">
+												<input type="hidden" name="cmd" value="_cart">
+												<input type="hidden" name="add" value="1">
+												<input type="hidden" name="googles_item" value="Azmani Round">
+												<input type="hidden" name="amount" value="725.00">
+												<button type="submit" class="googles-cart pgoogles-cart">
+													<i class="fas fa-cart-plus"></i>
+												</button>
+
+												
+											</form>
+										</div>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 product-men women_two">
+						<div class="product-googles-info googles">
+							<div class="men-pro-item">
+								<div class="men-thumb-item">
+									<img src="images/m3.jpg" class="img-fluid" alt="">
+									<div class="men-cart-pro">
+										<div class="inner-men-cart-pro">
+											<a href="single.html" class="link-product-add-cart">Quick View</a>
+										</div>
+									</div>
+									<span class="product-new-top">New</span>
+								</div>
+								<div class="item-info-product">
+
+									<div class="info-product-price">
+										<div class="grid_meta">
+											<div class="product_price">
+												<h4>
+													<a href="single.html">Farenheit Wayfarer</a>
+												</h4>
+												<div class="grid-price mt-2">
+													<span class="money ">$475.00</span>
+												</div>
+											</div>
+											<ul class="stars">
+												<li>
+													<a href="#">
+														<i class="fa fa-star" aria-hidden="true"></i>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<i class="fa fa-star" aria-hidden="true"></i>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<i class="fa fa-star" aria-hidden="true"></i>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<i class="fa fa-star" aria-hidden="true"></i>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<i class="fa fa-star-half-o" aria-hidden="true"></i>
+													</a>
+												</li>
+											</ul>
+										</div>
+										<div class="googles single-item hvr-outline-out">
+											<form action="#" method="post">
+												<input type="hidden" name="cmd" value="_cart">
+												<input type="hidden" name="add" value="1">
+												<input type="hidden" name="googles_item" value="Farenheit Wayfarer">
+												<input type="hidden" name="amount" value="475.00">
+												<button type="submit" class="googles-cart pgoogles-cart">
+													<i class="fas fa-cart-plus"></i>
+												</button>
+											
+											</form>
+
+										</div>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 product-men women_two">
+						<div class="product-googles-info googles">
+							<div class="men-pro-item">
+								<div class="men-thumb-item">
+									<img src="images/m4.jpg" class="img-fluid" alt="">
+									<div class="men-cart-pro">
+										<div class="inner-men-cart-pro">
+											<a href="single.html" class="link-product-add-cart">Quick View</a>
+										</div>
+									</div>
+									<span class="product-new-top">New</span>
+								</div>
+								<div class="item-info-product">
+
+									<div class="info-product-price">
+										<div class="grid_meta">
+											<div class="product_price">
+												<h4>
+													<a href="single.html">Fossil Wayfarer </a>
+												</h4>
+												<div class="grid-price mt-2">
+													<span class="money ">$825.00</span>
+												</div>
+											</div>
+											<ul class="stars">
+												<li>
+													<a href="#">
+														<i class="fa fa-star" aria-hidden="true"></i>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<i class="fa fa-star" aria-hidden="true"></i>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<i class="fa fa-star" aria-hidden="true"></i>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<i class="fa fa-star-half-o" aria-hidden="true"></i>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<i class="fa fa-star-o" aria-hidden="true"></i>
+													</a>
+												</li>
+											</ul>
+										</div>
+										<div class="googles single-item hvr-outline-out">
+											<form action="#" method="post">
+												<input type="hidden" name="cmd" value="_cart">
+												<input type="hidden" name="add" value="1">
+												<input type="hidden" name="googles_item" value="Fossil Wayfarer">
+												<input type="hidden" name="amount" value="825.00">
+												<button type="submit" class="googles-cart pgoogles-cart">
+													<i class="fas fa-cart-plus"></i>
+												</button>
+											</form>
+
+										</div>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+							</div>
+						</div>
+					</div>-->
+					<!-- /mens -->
+				<!--</div>-->
+				<!--//row-->
+				<!--/meddle-->
+				<!--<div class="row">
+					<div class="col-md-12 middle-slider my-4">
+						<div class="middle-text-info ">
+
+							<h3 class="tittle-w3layouts two text-center my-lg-4 mt-3">Summer Flash sale</h3>
+							<div class="simply-countdown-custom" id="simply-countdown-custom"></div>
+
+						</div>
+					</div>
+				</div>-->
+				<!--//meddle-->
+				<!--/slide-->
+				<!--<div class="slider-img mid-sec">-->
+					<!--//banner-sec-->
+					<!--<div class="mid-slider">
+						<div class="owl-carousel owl-theme row">
+							<div class="item">
+								<div class="gd-box-info text-center">
+									<div class="product-men women_two bot-gd">
+										<div class="product-googles-info slide-img googles">
+											<div class="men-pro-item">
+												<div class="men-thumb-item">
+													<img src="images/s5.jpg" class="img-fluid" alt="">
+													<div class="men-cart-pro">
+														<div class="inner-men-cart-pro">
+															<a href="single.html" class="link-product-add-cart">Quick View</a>
+														</div>
+													</div>
+													<span class="product-new-top">New</span>
+												</div>
+												<div class="item-info-product">
+
+													<div class="info-product-price">
+														<div class="grid_meta">
+															<div class="product_price">
+																<h4>
+																	<a href="single.html">Fastrack Aviator </a>
+																</h4>
+																<div class="grid-price mt-2">
+																	<span class="money ">$325.00</span>
+																</div>
+															</div>
+															<ul class="stars">
+																<li>
+																	<a href="#">
+																		<i class="fa fa-star" aria-hidden="true"></i>
+																	</a>
+																</li>
+																<li>
+																	<a href="#">
+																		<i class="fa fa-star" aria-hidden="true"></i>
+																	</a>
+																</li>
+																<li>
+																	<a href="#">
+																		<i class="fa fa-star" aria-hidden="true"></i>
+																	</a>
+																</li>
+																<li>
+																	<a href="#">
+																		<i class="fa fa-star-half-o" aria-hidden="true"></i>
+																	</a>
+																</li>
+																<li>
+																	<a href="#">
+																		<i class="fa fa-star-o" aria-hidden="true"></i>
+																	</a>
+																</li>
+															</ul>
+														</div>
+														<div class="googles single-item hvr-outline-out">
+															<form action="#" method="post">
+																<input type="hidden" name="cmd" value="_cart">
+																<input type="hidden" name="add" value="1">
+																<input type="hidden" name="googles_item" value="Fastrack Aviator">
+																<input type="hidden" name="amount" value="325.00">
+																<button type="submit" class="googles-cart pgoogles-cart">
+																	<i class="fas fa-cart-plus"></i>
+																</button>
+															</form>
+
+														</div>
+													</div>
+
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="gd-box-info text-center">
+									<div class="product-men women_two bot-gd">
+										<div class="product-googles-info slide-img googles">
+											<div class="men-pro-item">
+												<div class="men-thumb-item">
+													<img src="images/s6.jpg" class="img-fluid" alt="">
+													<div class="men-cart-pro">
+														<div class="inner-men-cart-pro">
+															<a href="single.html" class="link-product-add-cart">Quick View</a>
+														</div>
+													</div>
+													<span class="product-new-top">New</span>
+												</div>
+												<div class="item-info-product">
+
+													<div class="info-product-price">
+														<div class="grid_meta">
+															<div class="product_price">
+																<h4>
+																	<a href="single.html">MARTIN Aviator </a>
+																</h4>
+																<div class="grid-price mt-2">
+																	<span class="money ">$425.00</span>
+																</div>
+															</div>
+															<ul class="stars">
+																<li>
+																	<a href="#">
+																		<i class="fa fa-star" aria-hidden="true"></i>
+																	</a>
+																</li>
+																<li>
+																	<a href="#">
+																		<i class="fa fa-star" aria-hidden="true"></i>
+																	</a>
+																</li>
+																<li>
+																	<a href="#">
+																		<i class="fa fa-star" aria-hidden="true"></i>
+																	</a>
+																</li>
+																<li>
+																	<a href="#">
+																		<i class="fa fa-star-half-o" aria-hidden="true"></i>
+																	</a>
+																</li>
+																<li>
+																	<a href="#">
+																		<i class="fa fa-star-o" aria-hidden="true"></i>
+																	</a>
+																</li>
+															</ul>
+														</div>
+														<div class="googles single-item hvr-outline-out">
+															<form action="#" method="post">
+																<input type="hidden" name="cmd" value="_cart">
+																<input type="hidden" name="add" value="1">
+																<input type="hidden" name="googles_item" value="MARTIN Aviator">
+																<input type="hidden" name="amount" value="425.00">
+																<button type="submit" class="googles-cart pgoogles-cart">
+																	<i class="fas fa-cart-plus"></i>
+																</button>
+															</form>
+
+														</div>
+													</div>
+
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="gd-box-info text-center">
+									<div class="product-men women_two bot-gd">
+										<div class="product-googles-info slide-img googles">
+											<div class="men-pro-item">
+												<div class="men-thumb-item">
+													<img src="images/s7.jpg" class="img-fluid" alt="">
+													<div class="men-cart-pro">
+														<div class="inner-men-cart-pro">
+															<a href="single.html" class="link-product-add-cart">Quick View</a>
+														</div>
+													</div>
+													<span class="product-new-top">New</span>
+												</div>
+												<div class="item-info-product">
+
+													<div class="info-product-price">
+														<div class="grid_meta">
+															<div class="product_price">
+																<h4>
+																	<a href="single.html">Royal Son Aviator </a>
+																</h4>
+																<div class="grid-price mt-2">
+																	<span class="money ">$425.00</span>
+																</div>
+															</div>
+															<ul class="stars">
+																<li>
+																	<a href="#">
+																		<i class="fa fa-star" aria-hidden="true"></i>
+																	</a>
+																</li>
+																<li>
+																	<a href="#">
+																		<i class="fa fa-star" aria-hidden="true"></i>
+																	</a>
+																</li>
+																<li>
+																	<a href="#">
+																		<i class="fa fa-star" aria-hidden="true"></i>
+																	</a>
+																</li>
+																<li>
+																	<a href="#">
+																		<i class="fa fa-star-half-o" aria-hidden="true"></i>
+																	</a>
+																</li>
+																<li>
+																	<a href="#">
+																		<i class="fa fa-star-o" aria-hidden="true"></i>
+																	</a>
+																</li>
+															</ul>
+														</div>
+														<div class="googles single-item hvr-outline-out">
+															<form action="#" method="post">
+																<input type="hidden" name="cmd" value="_cart">
+																<input type="hidden" name="add" value="1">
+																<input type="hidden" name="googles_item" value="Royal Son Aviator">
+																<input type="hidden" name="amount" value="425.00">
+																<button type="submit" class="googles-cart pgoogles-cart">
+																	<i class="fas fa-cart-plus"></i>
+																</button>
+															</form>
+
+														</div>
+													</div>
+
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="gd-box-info text-center">
+									<div class="product-men women_two bot-gd">
+										<div class="product-googles-info slide-img googles">
+											<div class="men-pro-item">
+												<div class="men-thumb-item">
+													<img src="images/s8.jpg" class="img-fluid" alt="">
+													<div class="men-cart-pro">
+														<div class="inner-men-cart-pro">
+															<a href="single.html" class="link-product-add-cart">Quick View</a>
+														</div>
+													</div>
+													<span class="product-new-top">New</span>
+												</div>
+												<div class="item-info-product">
+
+													<div class="info-product-price">
+														<div class="grid_meta">
+															<div class="product_price">
+																<h4>
+																	<a href="single.html">Irayz Butterfly </a>
+																</h4>
+																<div class="grid-price mt-2">
+																	<span class="money ">$281.00</span>
+																</div>
+															</div>
+															<ul class="stars">
+																<li>
+																	<a href="#">
+																		<i class="fa fa-star" aria-hidden="true"></i>
+																	</a>
+																</li>
+																<li>
+																	<a href="#">
+																		<i class="fa fa-star" aria-hidden="true"></i>
+																	</a>
+																</li>
+																<li>
+																	<a href="#">
+																		<i class="fa fa-star" aria-hidden="true"></i>
+																	</a>
+																</li>
+																<li>
+																	<a href="#">
+																		<i class="fa fa-star-half-o" aria-hidden="true"></i>
+																	</a>
+																</li>
+																<li>
+																	<a href="#">
+																		<i class="fa fa-star-o" aria-hidden="true"></i>
+																	</a>
+																</li>
+															</ul>
+														</div>
+														<div class="googles single-item hvr-outline-out">
+															<form action="#" method="post">
+																<input type="hidden" name="cmd" value="_cart">
+																<input type="hidden" name="add" value="1">
+																<input type="hidden" name="googles_item" value="Irayz Butterfly">
+																<input type="hidden" name="amount" value="281.00">
+																<button type="submit" class="googles-cart pgoogles-cart">
+																	<i class="fas fa-cart-plus"></i>
+																</button>
+															</form>
+
+														</div>
+													</div>
+
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="gd-box-info text-center">
+									<div class="product-men women_two bot-gd">
+										<div class="product-googles-info slide-img googles">
+											<div class="men-pro-item">
+												<div class="men-thumb-item">
+													<img src="images/s9.jpg" class="img-fluid" alt="">
+													<div class="men-cart-pro">
+														<div class="inner-men-cart-pro">
+															<a href="single.html" class="link-product-add-cart">Quick View</a>
+														</div>
+													</div>
+													<span class="product-new-top">New</span>
+												</div>
+												<div class="item-info-product">
+
+													<div class="info-product-price">
+														<div class="grid_meta">
+															<div class="product_price">
+																<h4>
+																	<a href="single.html">Jerry Rectangular </a>
+																</h4>
+																<div class="grid-price mt-2">
+																	<span class="money ">$525.00</span>
+																</div>
+															</div>
+															<ul class="stars">
+																<li>
+																	<a href="#">
+																		<i class="fa fa-star" aria-hidden="true"></i>
+																	</a>
+																</li>
+																<li>
+																	<a href="#">
+																		<i class="fa fa-star" aria-hidden="true"></i>
+																	</a>
+																</li>
+																<li>
+																	<a href="#">
+																		<i class="fa fa-star" aria-hidden="true"></i>
+																	</a>
+																</li>
+																<li>
+																	<a href="#">
+																		<i class="fa fa-star-half-o" aria-hidden="true"></i>
+																	</a>
+																</li>
+																<li>
+																	<a href="#">
+																		<i class="fa fa-star-o" aria-hidden="true"></i>
+																	</a>
+																</li>
+															</ul>
+														</div>
+														<div class="googles single-item hvr-outline-out">
+															<form action="#" method="post">
+																<input type="hidden" name="cmd" value="_cart">
+																<input type="hidden" name="add" value="1">
+																<input type="hidden" name="googles_item" value="Jerry Rectangular ">
+																<input type="hidden" name="amount" value="525.00">
+																<button type="submit" class="googles-cart pgoogles-cart">
+																	<i class="fas fa-cart-plus"></i>
+																</button>
+															</form>
+
+														</div>
+													</div>
+
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="gd-box-info text-center">
+									<div class="product-men women_two bot-gd">
+										<div class="product-googles-info slide-img googles">
+											<div class="men-pro-item">
+												<div class="men-thumb-item">
+													<img src="images/s10.jpg" class="img-fluid" alt="">
+													<div class="men-cart-pro">
+														<div class="inner-men-cart-pro">
+															<a href="single.html" class="link-product-add-cart">Quick View</a>
+														</div>
+													</div>
+													<span class="product-new-top">New</span>
+												</div>
+												<div class="item-info-product">
+
+													<div class="info-product-price">
+														<div class="grid_meta">
+															<div class="product_price">
+																<h4>
+																	<a href="single.html">Herdy Wayfarer </a>
+																</h4>
+																<div class="grid-price mt-2">
+																	<span class="money ">$325.00</span>
+																</div>
+															</div>
+															<ul class="stars">
+																<li>
+																	<a href="#">
+																		<i class="fa fa-star" aria-hidden="true"></i>
+																	</a>
+																</li>
+																<li>
+																	<a href="#">
+																		<i class="fa fa-star" aria-hidden="true"></i>
+																	</a>
+																</li>
+																<li>
+																	<a href="#">
+																		<i class="fa fa-star" aria-hidden="true"></i>
+																	</a>
+																</li>
+																<li>
+																	<a href="#">
+																		<i class="fa fa-star-half-o" aria-hidden="true"></i>
+																	</a>
+																</li>
+																<li>
+																	<a href="#">
+																		<i class="fa fa-star-o" aria-hidden="true"></i>
+																	</a>
+																</li>
+															</ul>
+														</div>
+														<div class="googles single-item hvr-outline-out">
+															<form action="#" method="post">
+																<input type="hidden" name="cmd" value="_cart">
+																<input type="hidden" name="add" value="1">
+																<input type="hidden" name="googles_item" value="Herdy Wayfarer">
+																<input type="hidden" name="amount" value="325.00">
+																<button type="submit" class="googles-cart pgoogles-cart">
+																	<i class="fas fa-cart-plus"></i>
+																</button>
+															</form>
+
+														</div>
+													</div>
+
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>-->
+				<!-- /testimonials -->
+				<!--<div class="testimonials py-lg-4 py-3 mt-4">
+					<div class="testimonials-inner py-lg-4 py-3">
+						<h3 class="tittle-w3layouts text-center my-lg-4 my-4">Tesimonials</h3>
+						<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+							<div class="carousel-inner" role="listbox">
+								<div class="carousel-item active">
+									<div class="testimonials_grid text-center">
+										<h3>Anamaria
+											<span>Customer</span>
+										</h3>
+										<label>United States</label>
+										<p>Maecenas interdum, metus vitae tincidunt porttitor, magna quam egestas sem, ac scelerisque nisl nibh vel lacus.
+											Proin eget gravida odio. Donec ullamcorper est eu accumsan cursus.</p>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<div class="testimonials_grid text-center">
+										<h3>Esmeralda
+											<span>Customer</span>
+										</h3>
+										<label>United States</label>
+										<p>Maecenas interdum, metus vitae tincidunt porttitor, magna quam egestas sem, ac scelerisque nisl nibh vel lacus.
+											Proin eget gravida odio. Donec ullamcorper est eu accumsan cursus.</p>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<div class="testimonials_grid text-center">
+										<h3>Gretchen
+											<span>Customer</span>
+										</h3>
+										<label>United States</label>
+										<p>Maecenas interdum, metus vitae tincidunt porttitor, magna quam egestas sem, ac scelerisque nisl nibh vel lacus.
+											Proin eget gravida odio. Donec ullamcorper est eu accumsan cursus.</p>
+									</div>
+								</div>
+								<a class="carousel-control-prev test" href="#carouselExampleControls" role="button" data-slide="prev">
+									<span class="fas fa-long-arrow-alt-left"></span>
+									<span class="sr-only">Previous</span>
+								</a>
+								<a class="carousel-control-next test" href="#carouselExampleControls" role="button" data-slide="next">
+									<span class="fas fa-long-arrow-alt-right" aria-hidden="true"></span>
+									<span class="sr-only">Next</span>
+
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>-->
+				<!-- //testimonials -->
+				<!--<div class="row galsses-grids pt-lg-5 pt-3">
+					<div class="col-lg-6 galsses-grid-left">
+						<figure class="effect-lexi">
+							<img src="images/banner4.jpg" alt="" class="img-fluid">
+							<figcaption>
+								<h3>Editor's
+									<span>Pick</span>
+								</h3>
+								<p> Express your style now.</p>
+							</figcaption>
+						</figure>
+					</div>
+					<div class="col-lg-6 galsses-grid-left">
+						<figure class="effect-lexi">
+							<img src="images/banner1.jpg" alt="" class="img-fluid">
+							<figcaption>
+								<h3>Editor's
+									<span>Pick</span>
+								</h3>
+								<p>Express your style now.</p>
+							</figcaption>
+						</figure>
+					</div>
+				</div>-->
+				<!-- /grids -->
+				<!--<div class="bottom-sub-grid-content py-lg-5 py-3">
+					<div class="row">
+						<div class="col-lg-4 bottom-sub-grid text-center">
+							<div class="bt-icon">
+
+								<span class="far fa-hand-paper"></span>
+							</div>
+
+							<h4 class="sub-tittle-w3layouts my-lg-4 my-3">Satisfaction Guaranteed</h4>
+							<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+							<p>
+								<a href="shop.html" class="btn btn-sm animated-button gibson-three mt-4">Shop Now</a>
+							</p>
+						</div>-->
+						<!-- /.col-lg-4 -->
+						<!--<div class="col-lg-4 bottom-sub-grid text-center">
+							<div class="bt-icon">
+								<span class="fas fa-rocket"></span>
+							</div>
+
+							<h4 class="sub-tittle-w3layouts my-lg-4 my-3">Fast Shipping</h4>
+							<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+							<p>
+								<a href="shop.html" class="btn btn-sm animated-button gibson-three mt-4">Shop Now</a>
+							</p>
+						</div>-->
+						<!-- /.col-lg-4 -->
+						<!--<div class="col-lg-4 bottom-sub-grid text-center">
+							<div class="bt-icon">
+								<span class="far fa-sun"></span>
+							</div>
+
+							<h4 class="sub-tittle-w3layouts my-lg-4 my-3">UV Protection</h4>
+							<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+							<p>
+								<a href="shop.html" class="btn btn-sm animated-button gibson-three mt-4">Shop Now</a>
+							</p>
+						</div>-->
+						<!-- /.col-lg-4 -->
+					<!--</div>
+				</div>-->
+				<!-- //grids -->
+				<!-- /clients-sec -->
+				<!--<div class="testimonials p-lg-5 p-3 mt-4">
+					<div class="row last-section">
+						<div class="col-lg-3 footer-top-w3layouts-grid-sec">
+							<div class="mail-grid-icon text-center">
+								<i class="fas fa-gift"></i>
+							</div>
+							<div class="mail-grid-text-info">
+								<h3>Genuine Product</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur</p>
+							</div>
+						</div>
+						<div class="col-lg-3 footer-top-w3layouts-grid-sec">
+							<div class="mail-grid-icon text-center">
+								<i class="fas fa-shield-alt"></i>
+							</div>
+							<div class="mail-grid-text-info">
+								<h3>Secure Products</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur</p>
+							</div>
+						</div>
+						<div class="col-lg-3 footer-top-w3layouts-grid-sec">
+							<div class="mail-grid-icon text-center">
+								<i class="fas fa-dollar-sign"></i>
+							</div>
+							<div class="mail-grid-text-info">
+								<h3>Cash on Delivery</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur</p>
+							</div>
+						</div>
+						<div class="col-lg-3 footer-top-w3layouts-grid-sec">
+							<div class="mail-grid-icon text-center">
+								<i class="fas fa-truck"></i>
+							</div>
+							<div class="mail-grid-text-info">
+								<h3>Easy Delivery</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur</p>
+							</div>
+						</div>
+					</div>
+				</div>-->
+				<!-- //clients-sec -->
+			<!--</div>
+		</div>
+	</section>-->
+	<!-- about -->
+	<!--footer -->
+	
+
+	<div class="u-mt-xl js-scroll-target">
+    
+    
+            <div class="c-newsletter" id="newsletter" data-fstrz-fragment-selector="#newsletter" data-fstrz-fragment-id="fstrz-scss-2">
+    <div class="o-container">
+        <span class="c-newsletter__title u-pb-sm">Offres et Actualités</span>
+
+                                            <div class="c-box c-box--flash c-box--flash-info c-p">
+                    <div class="c-box__inner c-box__inner--stroke">
+                        <p><strong>Vous n'avez pas accès aux ressources.</strong></p>
+                    </div>
+                </div>
+                                                    <form class="js-newsletter-subscribe" id="newsletter-subscribe" action="https://www.afflelou.com/inscription-newsletter" method="post">
+                <div class="c-newsletter__form">
+                    <label class="c-newsletter__label" for="newsletter-subscribe__email">
+                        <mark class="svgbox svgbox--medium"><svg xmlns="http://www.w3.org/2000/svg" id="9c6ba615-02af-4b00-8d7f-29633b39410a" viewBox="0 0 24 24" data-name="newsletter"><title>newsletter</title><path d="M 0.5 4.33 V 19.67 h 23 V 4.33 Z M 12 13.06 L 3.13 5.73 H 20.87 Z M 7.75 11.35 L 1.89 17.2 V 6.51 Z m 1.08 0.89 l 2.91 2.4 l 0.24 -0.29 l 0.26 0.32 l 2.89 -2.39 l 6 6 H 2.79 Z m 7.38 -0.85 l 5.9 -4.88 V 17.29 Z" /></svg>
+</mark>
+                        <span class="c-newsletter__label__text u-visually-hidden">Votre e-mail</span>
+                    </label>
+                    <div class="c-field-group u-w100">
+                        <input name="email" class="c-field c-field--large u-brd-n u-w100" id="newsletter-subscribe__email" required="" type="email" placeholder="Votre e-mail">
+                                                    <input name="captcha" id="captcha" type="hidden">
+                            <script>
+                                var recaptchaCallback_newsletter = function () {
+                                    grecaptcha.ready(function () {
+                                        grecaptcha.execute('6Ld7b8cUAAAAAF1oMf0Vw-RfOP900j-KpfHaJ2nV', {action: 'newsletter'}).then(function (token) {
+                                            document.getElementById('captcha').value = token;
+                                        });
+                                    });
+                                };
+                            </script>
+                            <script src="https://www.google.com/recaptcha/api.js?render=6Ld7b8cUAAAAAF1oMf0Vw-RfOP900j-KpfHaJ2nV&amp;onload=recaptchaCallback_newsletter" defer="" async=""></script>
+                                                <input name="redirect" type="hidden" value="https://www.afflelou.com/#newsletter">
+                        <span class="c-field-group__btn">
+                        <button class="c-btn c-btn--noframe u-brd-n u-nowrap-space" type="submit" data-role="button" data-elements='{"eventCategory":"newsletter","eventAction":"click","eventLabel":"Souscription"}'>Valider</button>
+                    </span>
+                    </div>
+                </div>
+                <p class="u-xsmall u-ml-xl@lg u-mr-xl@lg u-ml-xl@md u-mr-xl@md u-pl-xl@lg u-pr-xl@lg">Votre adresse email est utilisée par la société Alain Afflelou Franchiseur, en qualité de responsable de traitement, pour vous adresser des emails sur ses offres et actualités concernant des produits d’optique, de contactologie et d’audiologie.
+Conformément au Règlement général sur la protection des données et à la loi dite « Informatique et Libertés » du 6 janvier 1978 dans sa version en vigueur, vous disposez d’un droit d’accès, de rectification, de retrait du consentement et d’opposition (notamment via un lien de désinscription dans chaque email), d’un droit à la limitation des traitements, d’un droit à la portabilité et du droit de définir des directives relatives à la conservation, à l'effacement et à la communication de vos données personnelles après votre décès.
+Pour en savoir plus sur les traitements mis en œuvre et sur les modalités d’exercice de vos droits, vous pouvez consulter notre <a href="https://www.afflelou.com/politique-protection-des-donnees-personnelles" target="_blank" rel="noopener noreferrer">Politique de Protection des Données Personnelles</a>.</p>
+            </form>
+            </div>
+</div>
+</div>
+
+	<footer class="py-lg-5 py-3">
+		<div class="container-fluid px-lg-5 px-3">
+			<div class="row footer-top-w3layouts">
+				<div class="col-lg-3 footer-grid-w3ls">
+					<div class="footer-title">
+						<h3>About Us</h3>
+					</div>
+					<div class="footer-text">
+						<p>Curabitur non nulla sit amet nislinit tempus convallis quis ac lectus. lac inia eget consectetur sed, convallis at
+							tellus. Nulla porttitor accumsana tincidunt.</p>
+						<ul class="footer-social text-left mt-lg-4 mt-3">
+
+							<li class="mx-2">
+								<a href="#">
+									<span class="fab fa-facebook-f"></span>
+								</a>
+							</li>
+							<li class="mx-2">
+								<a href="#">
+									<span class="fab fa-twitter"></span>
+								</a>
+							</li>
+							<li class="mx-2">
+								<a href="#">
+									<span class="fab fa-google-plus-g"></span>
+								</a>
+							</li>
+							<li class="mx-2">
+								<a href="#">
+									<span class="fab fa-linkedin-in"></span>
+								</a>
+							</li>
+							<li class="mx-2">
+								<a href="#">
+									<span class="fas fa-rss"></span>
+								</a>
+							</li>
+							<li class="mx-2">
+								<a href="#">
+									<span class="fab fa-vk"></span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3 footer-grid-w3ls">
+					<div class="footer-title">
+						<h3>Get in touch</h3>
+					</div>
+					<div class="contact-info">
+						<h4>Location :</h4>
+						<p>0926k 4th block building, king Avenue, New York City.</p>
+						<div class="phone">
+							<h4>Contact :</h4>
+							<p>Phone : +121 098 8907 9987</p>
+							<p>Email :
+								<a href="mailto:info@example.com">info@example.com</a>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 footer-grid-w3ls">
+					<div class="footer-title">
+						<h3>Quick Links</h3>
+					</div>
+					<ul class="links">
+						<li>
+							<a href="index.html">Home</a>
+						</li>
+						<li>
+							<a href="about.html">About</a>
+						</li>
+						<li>
+							<a href="404.html">Error</a>
+						</li>
+						<li>
+							<a href="shop.html">Shop</a>
+						</li>
+						<li>
+							<a href="contact.html">Contact Us</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-lg-3 footer-grid-w3ls">
+					<div class="footer-title">
+						<h3>Sign up for your offers</h3>
+					</div>
+					<div class="footer-text">
+						<p>By subscribing to our mailing list you will always get latest news and updates from us.</p>
+						<form action="#" method="post">
+							<input class="form-control" type="email" name="Email" placeholder="Enter your email..." required="">
+							<button class="btn1">
+								<i class="far fa-envelope" aria-hidden="true"></i>
+							</button>
+							<div class="clearfix"> </div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="copyright-w3layouts mt-4">
+				<p class="copy-right text-center ">&copy; 2018 Goggles. All Rights Reserved | Design by
+					<a href="http://w3layouts.com/"> W3layouts </a>
+				</p>
+			</div>
+		</div>
+	</footer>
+	<!-- //footer -->
+
+	<!--jQuery-->
+	<script src="{% static 'ecommerce/js/jquery-2.2.3.min.js' %}"></script>
+	<!-- newsletter modal -->
+	<!-- Modal -->
+	<!-- Modal -->
+	<!--<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body text-center p-5 mx-auto mw-100">
+					<h6>Join our newsletter and get</h6>
+					<h3>50% Off for your first Pair of Eye wear</h3>
+					<div class="login newsletter">
+						<form action="#" method="post">
+							<div class="form-group">
+								<label class="mb-2">Email address</label>
+								<input type="email" class="form-control" id="exampleInputEmail2" aria-describedby="emailHelp" placeholder="" required="">
+							</div>
+							<button type="submit" class="btn btn-primary submit mb-4">Get 50% Off</button>
+						</form>
+						<p class="text-center">
+							<a href="#">No thanks I want to pay full Price</a>
+						</p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>-->
+	<script>
+		$(document).ready(function () {
+			$("#myModal").modal();
+		});
+	</script>
+	<!-- // modal -->
+
+	<!--search jQuery-->
+	<script src="{% static 'ecommerce/js/modernizr-2.6.2.min.js' %}"></script>
+	<script src="{% static 'ecommerce/js/classie-search.js' %}"></script>
+	<script src="{% static 'ecommerce/js/demo1-search.js' %}"></script>
+	<!--//search jQuery-->
+	<!-- cart-js -->
+	<script src="{% static 'ecommerce/js/minicart.js' %}"></script>
+	<script>
+		googles.render();
+
+		googles.cart.on('googles_checkout', function (evt) {
+			var items, len, i;
+
+			if (this.subtotal() > 0) {
+				items = this.items();
+
+				for (i = 0, len = items.length; i < len; i++) {}
+			}
+		});
+	</script>
+	<!-- //cart-js -->
+	<script>
+		$(document).ready(function () {
+			$(".button-log a").click(function () {
+				$(".overlay-login").fadeToggle(200);
+				$(this).toggleClass('btn-open').toggleClass('btn-close');
+			});
+		});
+		$('.overlay-close1').on('click', function () {
+			$(".overlay-login").fadeToggle(200);
+			$(".button-log a").toggleClass('btn-open').toggleClass('btn-close');
+			open = false;
+		});
+	</script>
+	<!-- carousel -->
+	<!-- Count-down -->
+	<script src="{% static 'ecommerce/js/simplyCountdown.js' %}"></script>
+	<link href="{% static 'ecommerce/css/simplyCountdown.css' %}" rel='stylesheet' type='text/css' />
+	<script>
+		var d = new Date();
+		simplyCountdown('simply-countdown-custom', {
+			year: d.getFullYear(),
+			month: d.getMonth() + 2,
+			day: 25
+		});
+	</script>
+	<!--// Count-down -->
+	<script src="{% static 'ecommerce/js/owl.carousel.js' %}"></script>
+	<script>
+		$(document).ready(function () {
+			$('.owl-carousel').owlCarousel({
+				loop: true,
+				margin: 10,
+				responsiveClass: true,
+				responsive: {
+					0: {
+						items: 1,
+						nav: true
+					},
+					600: {
+						items: 2,
+						nav: false
+					},
+					900: {
+						items: 3,
+						nav: false
+					},
+					1000: {
+						items: 4,
+						nav: true,
+						loop: false,
+						margin: 20
+					}
+				}
+			})
+		})
+	</script>
+
+	<!-- //end-smooth-scrolling -->
+
+
+	<!-- dropdown nav -->
+	<script>
+		$(document).ready(function () {
+			$(".dropdown").hover(
+				function () {
+					$('.dropdown-menu', this).stop(true, true).slideDown("fast");
+					$(this).toggleClass('open');
+				},
+				function () {
+					$('.dropdown-menu', this).stop(true, true).slideUp("fast");
+					$(this).toggleClass('open');
+				}
+			);
+		});
+	</script>
+	<!-- //dropdown nav -->
+  <script src="{% static 'ecommerce/js/move-top.js' %}"></script>
+    <script src="{% static 'ecommerce/js/easing.js' %}"></script>
+    <script>
+        jQuery(document).ready(function($) {
+            $(".scroll").click(function(event) {
+                event.preventDefault();
+                $('html,body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 900);
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            /*
+            						var defaults = {
+            							  containerID: 'toTop', // fading element id
+            							containerHoverID: 'toTopHover', // fading element hover id
+            							scrollSpeed: 1200,
+            							easingType: 'linear' 
+            						 };
+            						*/
+
+            $().UItoTop({
+                easingType: 'easeOutQuart'
+            });
+
+        });
+    </script>
+    <!--// end-smoth-scrolling -->
+
+	<script src="{% static 'ecommerce/js/bootstrap.js' %}"></script>
+	 <link href="{% static 'ecommerce/css/aos.css' %}" rel='stylesheet prefetch' type="text/css" media="all" />
+        <link href=" {% static 'ecommerce/css/aos-animation.css' %}" rel='stylesheet prefetch' type="text/css" media="all" />
+        <script src="{% static 'ecommerce/js/aos.js' %}"></script>
+        <script src="{% static 'ecommerce/js/aosindex.js' %}"></script>
+
+
+											<!-- tout voir --> 
+    <script src="https://www.afflelou.com/fstrz/r/s/www.afflelou.com/js/vendor.js?frz-v=805"></script>
+    <script src="https://www.afflelou.com/fstrz/r/s/www.afflelou.com/js/main.js?frz-v=805"></script><div></div>
+    
+    <script type="text/javascript">
+					$(window).load(function() {
+						$("#flexiselDemo1").flexisel({
+							visibleItems: 4,
+							animationSpeed: 1000,
+							autoPlay: true,
+							autoPlaySpeed: 3000,    		
+							pauseOnHover: true,
+							enableResponsiveBreakpoints: true,
+							responsiveBreakpoints: { 
+								portrait: { 
+									changePoint:480,
+									visibleItems: 1
+								}, 
+								landscape: { 
+									changePoint:640,
+									visibleItems:2
+								},
+								tablet: { 
+									changePoint:768,
+									visibleItems: 3
+								}
+							}
+						});
+						
+					});
+			</script>
+			<script type="text/javascript" src="{% static 'ecommerce/js/jquery.flexisel.js'%}"></script>
+<script src="{% static 'ecommerce/js/lightGallery.js'%}"></script>
+	<script>
+    	 $(document).ready(function() {
+			$("#lightGallery").lightGallery({
+				mode:"fade",
+				speed:800,
+				caption:true,
+				desc:true,
+				mobileSrc:true
+			});
+		});
+    </script>
+    
+    
+
+    <script src="https://www.afflelou.com/fstrz/r/s/www.afflelou.com/js/polyfill.js?frz-v=855"></script>
+<script type="text/javascript">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","1000676390004390");fbq("track","PageView");fbq("track","ViewContent");</script>
+<noscript>&lt;img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1000676390004390&amp;amp;ev=PageView&amp;amp;noscript=1"&gt;</noscript>
+<script src="https://tags.digital-metric.com/93e0b3e7f0fdb0bcdbddc6662b552086" type="text/javascript"></script><script src="//analytics.digital-metric.com/vw?p=630df6a33b09f5cf8d4b40cf61f93747&amp;" type="text/javascript"></script>
+    <script src="https://www.afflelou.com/fstrz/r/s/www.afflelou.com/js/modernizr.js?frz-v=855"></script><script src="https://dgvoua7mh4f9h.cloudfront.net/js/1/analytics/1238_gz.js" type="text/javascript"></script>
+    <script src="https://www.afflelou.com/fstrz/r/s/www.afflelou.com/js/vendor.js?frz-v=855"></script>
+    <script src="https://www.afflelou.com/fstrz/r/s/www.afflelou.com/js/main.js?frz-v=855"></script><div></div>
+    <script src="https://www.google-analytics.com/plugins/ua/ec.js" defer="" async=""></script>
+    <script src="https://bat.bing.com/bat.js" defer="" async=""></script>
+
+    
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMxklPxyfeeaencbo-711K_dUD_6Xs32A" defer="" async=""></script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"48a9765c34","applicationID":"47112051","transactionName":"blZRYkAFXBdVUhJeWVccclVGDV0KG0ISWERcbFtZXwFCBVNUOVFEZnVh","queueTime":0,"applicationTime":182,"atts":"QhFSFAgfTxk=","errorBeacon":"bam.nr-data.net","agent":""}</script>
+
+<div><div class="grecaptcha-badge" style="border-radius: 2px; transition:right 0.3s; width: 256px; height: 60px; right: -186px; bottom: 14px; overflow: hidden; display: block; position: fixed; box-shadow: 0px 0px 5px gray;" data-style="bottomright"><div class="grecaptcha-logo"><iframe name="a-qff6bppc7wx8" width="256" height="60" role="presentation" src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6Ld7b8cUAAAAAF1oMf0Vw-RfOP900j-KpfHaJ2nV&amp;co=aHR0cHM6Ly93d3cuYWZmbGVsb3UuY29tOjQ0Mw..&amp;hl=fr&amp;v=JPZ52lNx97aD96bjM7KaA0bo&amp;size=invisible&amp;cb=yuxa23o1uq1k" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-popups-to-escape-sandbox"></iframe></div><div class="grecaptcha-error"></div><textarea name="g-recaptcha-response" class="g-recaptcha-response" id="g-recaptcha-response-100000" style="margin: 10px 25px; padding: 0px; border: 1px solid rgb(193, 193, 193); border-image: none; width: 250px; height: 40px; display: none;">03AGdBq27ovmXBwL4rStRIKlOZje6-g0PeQEESTYqt8CKby55Vfb9JYxZgkAUraaGTYZ4-w7df_vyvd8AAo0t-3kkMSd2IhAKUC1H7NKDjUih69cfs3k5WTBkFcZyhwyIF-OrdtMg3IpueHv16uc9SN0tVK1KPOKuY23pIttPYUP11WdhN-zNImDvOL3aRTZGd8fHSNGL4RJ7ZrxVTjZqQaU5EiEt62HUzDBbxL7h74JnsLmDbagsV9r-Bfygkb4mcjSEp6lUUx2F7gdxfUmlv99M0ix52thAZXYHQnRt1ABxJdQ3SzsG8QYGJD_yrcRIBO8BpqRVfflHmeiswE5R58z9A5aUsPUGsBhj_KpV9JfKynwsli3XQzKYT0XijNtXS23RZalfT9wGJ</textarea></div><iframe style="display: none;"></iframe></div><div style="display: none; visibility: hidden;">
+
+<script type="text/javascript">var google_conversion_id=1030106150,google_custom_params=window.google_tag_params,google_remarketing_only=!0;</script>
+<script src="//www.googleadservices.com/pagead/conversion.js" type="text/javascript"></script>
+<noscript></noscript>
+</div><div style="display: none; visibility: hidden;"><script>var doofinder_script="//cdn.doofinder.com/media/js/doofinder-classic.6.latest.min.js";(function(a,c){var b=a.createElement(c);a=a.getElementsByTagName(c)[0];b.async=1;b.src=("https:"==location.protocol?"https:":"http:")+doofinder_script;b.setAttribute("charset","utf-8");a.parentNode.insertBefore(b,a)})(document,"script");
+var dfClassicLayers=[{hashid:"1d40d0e329e40ff126411386be720d4d",zone:"eu1",display:{lang:"en",width:"65%",align:"center",facets:{width:"250px",attached:"left"}},queryInput:"#_search-doofinder-input",urlHash:!0,mobile:{toggleInput:"#_search-mobile-doofinder-input"}}];</script></div><div style="display: none; visibility: hidden;">                
+                <script type="text/javascript">(function(){var a=document.createElement("script");a.type="text/javascript";a.async=!0;a.src=document.location.protocol+"//halc.iadvize.com/iadvize.js?sid\x3d1477";var b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b)})();</script>
+                </div><div style="display: none; visibility: hidden;">
+<script>!function(b){if(!window.pintrk){window.pintrk=function(){window.pintrk.queue.push(Array.prototype.slice.call(arguments))};var a=window.pintrk;a.queue=[];a.version="3.0";a=document.createElement("script");a.async=!0;a.src=b;b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b)}}("https://s.pinimg.com/ct/core.js");pintrk("load","2613738520148",{em:"\x3cuser_email_address\x3e"});pintrk("page");</script>
+<noscript></noscript>
+</div><iframe title="Encadré sans information significative" src="https://halc.iadvize.com/storage.php?type=local&amp;o=https://www.afflelou.com" style="border: 0px; border-image: none; width: 1px; height: 1px; display: none;"></iframe><div class="df-classic df-hidden" id="dfclassic" data-facets="left" data-layout="grid"><div class="df-layer__content"><div class="df-aside" style="width: 250px;" data-df-aside=""><div class="df-aside__header"><a class="df-icon df-icon--close" href="#" data-role="close"><svg xmlns="http://www.w3.org/2000/svg" fill="#000000" viewBox="0 0 24 24" width="24" height="24"><path d="M 19 6.41 L 17.59 5 L 12 10.59 L 6.41 5 L 5 6.41 L 10.59 12 L 5 17.59 L 6.41 19 L 12 13.41 L 17.59 19 L 19 17.59 L 13.41 12 Z" /><path fill="none" d="M 0 0 h 24 v 24 H 0 Z" /></svg></a></div><div class="df-aside__content"><div id="df-aside__content__dfclassic"><div class="df-panel" id="df-panel-54tclgej" style="display: none;" data-role="panel" data-facet="gender"><a class="df-panel__title" href="#" data-role="panel-label" data-toggle="panel"></a><div class="df-panel__content" data-role="panel-content"></div></div><div class="df-panel" id="df-panel-5rxniwjb" style="display: none;" data-role="panel" data-facet="categories"><a class="df-panel__title" href="#" data-role="panel-label" data-toggle="panel"></a><div class="df-panel__content" data-role="panel-content"></div></div><div class="df-panel" id="df-panel-9tt0355s" style="display: none;" data-role="panel" data-facet="brand"><a class="df-panel__title" href="#" data-role="panel-label" data-toggle="panel"></a><div class="df-panel__content" data-role="panel-content"></div></div><div class="df-panel" id="df-panel-0hx758mf" style="display: none;" data-role="panel" data-facet="best_price"><a class="df-panel__title" href="#" data-role="panel-label" data-toggle="panel"></a><div class="df-panel__content" data-role="panel-content"></div></div><div class="df-panel" id="df-panel-bup2lvz9" style="display: none;" data-role="panel" data-facet="color"><a class="df-panel__title" href="#" data-role="panel-label" data-toggle="panel"></a><div class="df-panel__content" data-role="panel-content"></div></div><div class="df-panel" id="df-panel-22zizs5q" style="display: none;" data-role="panel" data-facet="g:collection"><a class="df-panel__title" href="#" data-role="panel-label" data-toggle="panel"></a><div class="df-panel__content" data-role="panel-content"></div></div></div></div></div><div class="df-main">  <div class="df-header" id="df-header__dfclassic"></div>  <div class="df-results" id="df-results__dfclassic"><div class="df-results__content" id="df-results__content__dfclassic"></div></div><a class="doofinderLogo" href="http://www.doofinder.com?mktcod=REF1" target="_blank">Powered by <i>Doofinder</i></a></div></div></div><script type="text/javascript">(function(d,e,f,g,a,b,c){d._troq||(a=d._troq=function(){a.callTro?a.callTro.apply(a,arguments):a.queue.push(arguments)},a.push=a,a.queue=[],a.version="1.0",b=e.createElement(f),b.async=!0,b.src=g,c=e.getElementsByTagName(f)[0],c.parentNode.insertBefore(b,c))})(window,document,"script","//mmtro.com/tro.js");_troq("session_ttl",1800);_troq("init","6546532-e9a6616f1dfe33ab5a598af2f9f25095");_troq("tag",{rtgpg:"hp",email:google_tag_manager["GTM-W6R54J"].macro(8),m5e:google_tag_manager["GTM-W6R54J"].macro(9),rtgcustomerid:google_tag_manager["GTM-W6R54J"].macro(10)});</script><div id="idz-root" style="flex:0 1 auto; display: block;"></div></body></html>
+    
+
+	<!-- js file -->
+</body>
+
+</html>
+

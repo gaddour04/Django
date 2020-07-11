@@ -1,0 +1,788 @@
+{%extends 'index.html'%}
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>matchwear</title>
+</head>
+<body>
+  {% block navfooter %}
+  
+    <!-- banner -->
+    <div class="banner_inner">
+      <div class="services-breadcrumb">
+        <div class="inner_breadcrumb">
+
+          <ul class="short">
+            <li>
+              <a href="index.html">Home</a>
+              <i>|</i>
+            </li>
+            <li>Shop</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+    <!--//banner -->
+    <!--/shop-->
+    
+
+    <div class="container-fluid">
+
+    <!--<nav class="navbar navbar-expand-lg navbar-light " >
+  <a class="navbar-brand" href="#">filtre</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown" style="color: #454546">
+    <ul class="navbar-nav">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Marque
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Ray Ban</a>
+          <a class="dropdown-item" href="#">Gucci</a>
+          <a class="dropdown-item" href="#">Guess</a>
+          <a class="dropdown-item" href="#">Dior</a>
+        </div>
+      </li>
+     <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Forme
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Ovale</a>
+          <a class="dropdown-item" href="#">Rectangle</a>
+          <a class="dropdown-item" href="#">Ronde</a>
+        </div>
+      </li>
+     <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Style
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Tendance</a>
+          <a class="dropdown-item" href="#">Sport</a>
+          <a class="dropdown-item" href="#">Intemporel </a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Prix
+        </a>
+        
+      </li>
+      <li>
+          
+           <form class="form-inline my-2 my-lg-0" action="/products/search/">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search Product" aria-label="Search" name="keywords">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+      </li>
+    </ul>
+  </div>
+</nav>
+<a href="{% url 'products:product_list_price_desc'%}">fff</a>-->
+<div id="mySidenav" class="sidenav">
+  <h4 class="pl-3" style="margin-top: -35px;color: #6c7b88;text-transform: uppercase;font-weight: bold;">filter sidebar</h4>
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <br>
+  <hr style="color: white">
+
+
+  <div class=" mt-5">
+    
+  
+  <form class="form-inline my-2 my-lg-0" action="/products/search/">
+<div class="pl-3">
+  <input style="height: 35px ;width:200px;color: #3a3f48" class="form-control " type="search" placeholder="Search Product" aria-label="Search" name="keywords">
+      <!--<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>-->
+
+  </div>    
+    </form>
+    </div>
+<div class="mt-5">
+  <form method="get" class="form-group  " >
+<div class="pl-3">
+  <div class="row">
+    <div class="col-3">
+      <label style="color: white" for="id_category">Category</label>
+    </div>
+    <div class="col-7 " style="padding-left: 27px">
+      {{myFilter.form.category}}
+    </div>
+    
+  </div>
+  
+  </div>
+  
+  <div style="padding-top: 20px;" class="mt-4 pl-3">
+    <div class="row">
+      <div class="col-3">
+        <label style="color: white"  for="id_category">Genre  </label>
+      </div>
+      <div class="col-7 " style="padding-left: 26px">
+        {{myFilter.form.genre}}
+      </div>
+      
+    </div>
+    
+     
+  </div>
+  <div style="padding-top: 20px;" class="mt-4 pl-3">
+    <div class="row">
+      <div class="col-3">
+        <label style="color: white"  for="id_category">Marque  </label>
+      </div>
+      <div class="col-7 " style="padding-left: 26px">
+        {{myFilter.form.marque}}
+      </div>
+      
+    </div>
+    
+     
+  </div>
+  <div style="padding-top: 20px;" class="mt-4 pl-3">
+    <div class="row">
+      <div class="col-3">
+        <label style="color: white"  for="id_category">Forme  </label>
+      </div>
+      <div class="col-7 " style="padding-left: 26px">
+        {{myFilter.form.forme}}
+      </div>
+      
+    </div>
+    
+     
+  </div>
+   
+     <!--{{myFilter.form}}-->
+        <!--{{myFilter.form.price}}-->
+        
+<div class="mt-5 pl-4">
+   <button class="btn btn-primary" style="width: 200px;height: 30px;background-color: #454546" type="submit">Filter</button>
+</div>
+       
+      </form>
+      </div>
+      <a href="{% url 'products:product_list_price_desc'%}">price 200-300</a>
+      <a href="{% url 'products:product_list_price_desc1'%}">price 300-400</a>
+      <a href="{% url 'products:product_list_price_desc2'%}">price 400-500</a>
+</div>
+
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Filter</span>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+<!--<div class="product_top_bar mt-4 ">
+<form method="get" class="form-group  " style="padding-left: 130px;">
+
+  <label for="id_category">Category</label>
+  {{myFilter.form.category}}
+   <label for="id_category">Genre</label>
+  {{myFilter.form.genre}}
+   <label for="id_category">Marque</label>
+  {{myFilter.form.marque}}
+   <label for="id_category">Forme</label>
+  {{myFilter.form.forme}}-->
+
+        <!--{{myFilter.form}}-->
+        <!--{{myFilter.form.price}}-->
+        
+
+       <!-- <button class="btn btn-primary" style="width: 100px;height: 30px;background-color: #454546" type="submit">Search</button>
+      </form>
+
+      </div>-->
+</div>
+
+
+    <section>
+
+            
+            <div class="collection u-flex u-flex-wrap container-fluid ml-4">
+              {% for product in abc %}
+              
+                                                                                <div class="collection-item">
+                            <a class="u-txt-no-underline" href="{{product.get_absolute_url}}">
+                              {%if product.image1%}
+                                <img class="article-magic1 loading" alt="" src="{{product.image1.url}}" data-was-processed="true">
+                                {%endif%}
+                                <div class="a"><ul >
+                                  <li><p class="magic-landing magic-landing-desc u-txt-uppercase"><small class="c-small1 u-txt-normal">{{product.category}}</small></p></li>
+                                  <li><p class="magic-landing magic-landing-desc u-txt-uppercase"><span class="lestitres"> {{product.name}} </span></p></li>
+                                  <li><p class="magic-landing magic-landing-desc u-txt-uppercase "><span class="prix">
+                                  {% if product.discountprice > 0 %}
+            
+                           <span style="color: green" class="badge red mr-1">SALE</span>
+              
+                         {%endif%}{{product.price}} TND</span> </p></li>
+                                  <!--<li><p class="carouselktiba2">Ajouter <i class="fa fa-cart-plus" style="color: #c3a269" aria-hidden="true"></i></p>
+
+            <p class="ktiba">au panier</p></a></li>-->
+            <!--<form action="#" method="post">
+                        <input name="cmd" type="hidden" value="_cart">
+                        <input name="add" type="hidden" value="1">
+                        <input name="googles_item" type="hidden" value="Farenheit">
+                        <input name="amount" type="hidden" value="575.00">
+                        <button class="googles-cart pgoogles-cart" type="submit">
+                         <p class="carouselktiba2">Ajouter</p>
+            <p class="ktiba">au panier</p>
+                        </button>
+
+                        
+                      </form>-->
+                                </ul></div>
+                                
+                            </a>
+
+                        </div>
+                        {%endfor%}
+                      </div>
+                      {% if product_list.has_other_pages %}
+      <!--Pagination-->
+      <nav class="d-flex justify-content-center wow fadeIn">
+        <ul class="pagination pg-blue">
+
+          {% if product_list.has.previous%}<!--Arrow left-->
+          <li class="page-item disabled">
+            <a class="page-link" href="?page={{ product_list.previous_page_number }}" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+              <span class="sr-only">Previous</span>
+            </a>
+          </li>
+           {% else%}
+            <li class="page-item disabled"></li>
+
+            {% endif%}
+            {% for pages in product_list.paginator.page_range %}
+
+                {% if product_list.number == pages %}
+                    <li class="page-item ">
+                      <a class="page-link" href="#">{{pages}}</a>
+                    </li>
+                {% else %}
+
+                    <li class="page-item"><a class="page-link" href="?page={{pages}}">{{pages}}</a></li>
+
+                {% endif %}
+
+                                    
+
+          {% endfor %}
+          
+           {% if product_list.has.next %}
+          <li class="page-item">
+            <a class="page-link" href="?page={{ product_list.next_page_number }}" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+              <span class="sr-only">Next</span>
+            </a>
+          </li>
+          {%else %}
+              <li class="page-item disabled"></li>
+          {% endif%}
+        </ul>
+      </nav>
+      <!--Pagination-->
+      {% endif%}
+                                            
+        </section>
+        <br>
+        <br>
+        
+        <div class="container-fluid oy">
+      
+        <div class="row ">
+              <div class="col-md-auto">
+                
+              </div>
+              <div class="col-7">
+                <img class="img-fluid" src="{% static 'ecommerce/images/virtual-try-girl.gif' %}">
+              </div>
+              <div class="col-md-auto">
+                3 of 3
+              </div>
+        </div>
+      
+
+    </div>
+    <br>
+        <br>
+          <!--/slide-->
+        <aside class="o-product__selection  c-product-selection">
+    <div class="c-product-selection__title">
+        Vous aimerez aussi…
+    </div>
+    <div class="c-product-selection__swiper-wrapper">
+        <div class="c-product-selection__swiper swiper-container js-swiper-products swiper-container-horizontal">
+            <ul class="c-product-selection__list  swiper-wrapper" style="transform: translate3d(-2016px, 0px, 0px); transition-duration: 0ms;"><li class="c-product-selection__item swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev" style="margin-right: 14px;" itemprop="isRelatedTo" data-swiper-slide-index="0">
+                            
+
+                                    
+<article class="c-category-push__item c-product-item u-pb-lg " data-component="product" itemtype="http://schema.org/Product" itemscope="">
+    <a class="c-product-item__img " href="/lunettes-de-soleil-femme/afflelou/carmen-carmen-c1-4921-black.html" data-role="datalayer-push-click" data-elements='{"event":"productClick","ecommerce":{"currencyCode":"EUR","click":{"actionField":{"list":"product"},"products":{"name":"CARMEN - Noir","id":"07630036406212","price":"59.00","brand":"AFFLELOU","category":"frame\/sunglasses\/women","quantity":1}}}}' itemprop="url">
+        <div class="c-product-item__placeholder"><img alt="Chargement de l'image" src="data:image/gif;base64,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"></div>
+                                            <picture class="c-product-item__media is-active" data-component="color-media" data-id="black">
+                <img title="Lunettes de soleil femme CARMEN noir" alt="Lunettes de soleil femme CARMEN noir" src="https://www.afflelou.com/fstrz/r/s/media.afflelou.com/F8STsgAl2NwQo3mAKE9U1Az03Gs=/780x390/afflelou/france/products/07630036406212_face.png?frz-v=805" itemprop="image">
+            </picture>
+                                                    </a>
+
+        
+            <a class="c-product-item__name" href="https://www.afflelou.com/lunettes-de-soleil-femme/afflelou/carmen-carmen-c1-4921-black.html">
+            <span class="c-product-item__name u-txt-uppercase" itemprop="name">
+                                    AFFLELOU
+                                CARMEN
+            </span>
+        </a>
+    
+                <p class="c-product-item__price u-m-n" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
+        <meta content="EUR" itemprop="priceCurrency">
+                            <span style="margin-left:0.5em;" itemprop="price" content="59.00">59€</span>
+                            <br>
+                </p>
+    
+        </article>
+
+                    </li><li class="c-product-selection__item swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" style="margin-right: 14px;" itemprop="isRelatedTo" data-swiper-slide-index="1">
+                            
+
+                                    
+<article class="c-category-push__item c-product-item u-pb-lg " data-component="product" itemtype="http://schema.org/Product" itemscope="">
+    <a class="c-product-item__img " href="/lunettes-de-soleil-femme/afflelou/betty-betty-bl01-5517-blue.html" data-role="datalayer-push-click" data-elements='{"event":"productClick","ecommerce":{"currencyCode":"EUR","click":{"actionField":{"list":"product"},"products":{"name":"BETTY - Bleu Dore","id":"07630036433836","price":"59.00","brand":"AFFLELOU","category":"frame\/sunglasses\/women","quantity":1}}}}' itemprop="url">
+        <div class="c-product-item__placeholder"><img alt="Chargement de l'image" src="data:image/gif;base64,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"></div>
+                                            <picture class="c-product-item__media is-active" data-component="color-media" data-id="blue">
+                <img title="Lunettes de soleil femme BETTY bleu/doré" alt="Lunettes de soleil femme BETTY bleu/doré" src="https://www.afflelou.com/fstrz/r/s/media.afflelou.com/cbKsdJMt5-XPrtTIVIFMS8zzHMQ=/780x390/afflelou/france/products/07630036433836_face.png?frz-v=805" itemprop="image">
+            </picture>
+                                                    </a>
+
+        
+            <a class="c-product-item__name" href="https://www.afflelou.com/lunettes-de-soleil-femme/afflelou/betty-betty-bl01-5517-blue.html">
+            <span class="c-product-item__name u-txt-uppercase" itemprop="name">
+                                    AFFLELOU
+                                BETTY
+            </span>
+        </a>
+    
+                <p class="c-product-item__price u-m-n" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
+        <meta content="EUR" itemprop="priceCurrency">
+                            <span style="margin-left:0.5em;" itemprop="price" content="59.00">59€</span>
+                            <br>
+                </p>
+    
+        </article>
+
+                    </li><li class="c-product-selection__item swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next" style="margin-right: 14px;" itemprop="isRelatedTo" data-swiper-slide-index="2">
+                            
+
+                                    
+<article class="c-category-push__item c-product-item u-pb-lg " data-component="product" itemtype="http://schema.org/Product" itemscope="">
+    <a class="c-product-item__img " href="/lunettes-de-soleil-femme/afflelou/tutti-tutti-pk01-5120-pink.html" data-role="datalayer-push-click" data-elements='{"event":"productClick","ecommerce":{"currencyCode":"EUR","click":{"actionField":{"list":"product"},"products":{"name":"TUTTI - Rose","id":"07630036434499","price":"59.00","brand":"AFFLELOU","category":"frame\/sunglasses\/women","quantity":1}}}}' itemprop="url">
+        <div class="c-product-item__placeholder"><img alt="Chargement de l'image" src="data:image/gif;base64,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"></div>
+                                            <picture class="c-product-item__media is-active" data-component="color-media" data-id="pink">
+                <img title="Lunettes de soleil femme TUTTI rose" alt="Lunettes de soleil femme TUTTI rose" src="https://www.afflelou.com/fstrz/r/s/media.afflelou.com/gAK4lJ-NSnLA5wommwTv8EtLvpA=/780x390/afflelou/france/products/07630036434499_face.png?frz-v=805" itemprop="image">
+            </picture>
+                                                    </a>
+
+        
+            <a class="c-product-item__name" href="https://www.afflelou.com/lunettes-de-soleil-femme/afflelou/tutti-tutti-pk01-5120-pink.html">
+            <span class="c-product-item__name u-txt-uppercase" itemprop="name">
+                                    AFFLELOU
+                                TUTTI
+            </span>
+        </a>
+    
+                <p class="c-product-item__price u-m-n" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
+        <meta content="EUR" itemprop="priceCurrency">
+                            <span style="margin-left:0.5em;" itemprop="price" content="59.00">59€</span>
+                            <br>
+                </p>
+    
+        </article>
+
+                    </li><li class="c-product-selection__item swiper-slide swiper-slide-duplicate" style="margin-right: 14px;" itemprop="isRelatedTo" data-swiper-slide-index="3">
+                            
+
+                                    
+<article class="c-category-push__item c-product-item u-pb-lg " data-component="product" itemtype="http://schema.org/Product" itemscope="">
+    <a class="c-product-item__img " href="/lunettes-de-soleil-femme/afflelou/romy-saf8397-pkgd-4820-pink.html" data-role="datalayer-push-click" data-elements='{"event":"productClick","ecommerce":{"currencyCode":"EUR","click":{"actionField":{"list":"product"},"products":{"name":"SAF8397 - Rose Dore","id":"07630036450642","price":"59.00","brand":"AFFLELOU","category":"frame\/sunglasses\/women","quantity":1}}}}' itemprop="url">
+        <div class="c-product-item__placeholder"><img class="loading" alt="Chargement de l'image" src="data:image/gif;base64,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" data-was-processed="true"></div>
+                                            <picture class="c-product-item__media is-active" data-component="color-media" data-id="pink">
+                <img title="Lunettes de soleil femme ROMY rose/doré" class="loading" alt="Lunettes de soleil femme ROMY rose/doré" src="https://www.afflelou.com/fstrz/r/s/media.afflelou.com/JU5Ooimr6i_fgWfo94_KYAFiaSs=/780x390/afflelou/france/products/07630036450642_face.png?frz-v=805" data-was-processed="true" itemprop="image">
+            </picture>
+                                                    </a>
+
+        
+            <a class="c-product-item__name" href="https://www.afflelou.com/lunettes-de-soleil-femme/afflelou/romy-saf8397-pkgd-4820-pink.html">
+            <span class="c-product-item__name u-txt-uppercase" itemprop="name">
+                                    AFFLELOU
+                                ROMY
+            </span>
+        </a>
+    
+                <p class="c-product-item__price u-m-n" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
+        <meta content="EUR" itemprop="priceCurrency">
+                            <span style="margin-left:0.5em;" itemprop="price" content="59.00">59€</span>
+                            <br>
+                </p>
+    
+        </article>
+
+                    </li><li class="c-product-selection__item swiper-slide swiper-slide-duplicate" style="margin-right: 14px;" itemprop="isRelatedTo" data-swiper-slide-index="4">
+                            
+
+                                    
+<article class="c-category-push__item c-product-item u-pb-lg " data-component="product" itemtype="http://schema.org/Product" itemscope="">
+    <a class="c-product-item__img " href="/lunettes-de-soleil-femme/afflelou/salsa-salsa-gdbl-5021-gold.html" data-role="datalayer-push-click" data-elements='{"event":"productClick","ecommerce":{"currencyCode":"EUR","click":{"actionField":{"list":"product"},"products":{"name":"SALSA - Dore Bleu","id":"07630036451236","price":"59.00","brand":"AFFLELOU","category":"frame\/sunglasses\/women","quantity":1}}}}' itemprop="url">
+        <div class="c-product-item__placeholder"><img class="loading" alt="Chargement de l'image" src="data:image/gif;base64,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" data-was-processed="true"></div>
+                                            <picture class="c-product-item__media is-active" data-component="color-media" data-id="gold">
+                <img title="Lunettes de soleil femme SALSA doré/bleu" class="loading" alt="Lunettes de soleil femme SALSA doré/bleu" src="https://www.afflelou.com/fstrz/r/s/media.afflelou.com/Ng3XPkQc4upiY-leVhwdAzLTysg=/780x390/afflelou/france/products/07630036451236_face.png?frz-v=805" data-was-processed="true" itemprop="image">
+            </picture>
+                                                    </a>
+
+        
+            <a class="c-product-item__name" href="https://www.afflelou.com/lunettes-de-soleil-femme/afflelou/salsa-salsa-gdbl-5021-gold.html">
+            <span class="c-product-item__name u-txt-uppercase" itemprop="name">
+                                    AFFLELOU
+                                SALSA
+            </span>
+        </a>
+    
+                <p class="c-product-item__price u-m-n" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
+        <meta content="EUR" itemprop="priceCurrency">
+                            <span style="margin-left:0.5em;" itemprop="price" content="59.00">59€</span>
+                            <br>
+                </p>
+    
+        </article>
+
+                    </li>
+                                                                                                                                                                                                                                                                                                                                                    
+                                                                <li class="c-product-selection__item swiper-slide swiper-slide-prev" style="margin-right: 14px;" itemprop="isRelatedTo" data-swiper-slide-index="0">
+                            
+
+                                    
+<article class="c-category-push__item c-product-item u-pb-lg " data-component="product" itemtype="http://schema.org/Product" itemscope="">
+    <a class="c-product-item__img " href="/lunettes-de-soleil-femme/afflelou/carmen-carmen-c1-4921-black.html" data-role="datalayer-push-click" data-elements='{"event":"productClick","ecommerce":{"currencyCode":"EUR","click":{"actionField":{"list":"product"},"products":{"name":"CARMEN - Noir","id":"07630036406212","price":"59.00","brand":"AFFLELOU","category":"frame\/sunglasses\/women","quantity":1}}}}' itemprop="url">
+        <div class="c-product-item__placeholder"><img class="loading" alt="Chargement de l'image" src="data:image/gif;base64,R0lGODlhIAAgAPMLAMbGxoSEhLa2tpqamjY2NlZWVtjY2OTk5Ly8vB4eHgQEBP///wAAAAAAAAAAAAAAACH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQFCgALACwAAAAAIAAgAAAE0HDJSelQo+rNZ1JJZRydJgSVolKAIJTUkSQFpSrT4SIwNScvyW2CcBl6k8CMMBkuDDskhTBDLZw7klQi+JGGUAEgZiQSCJlJoarR5YplyeBMKAQBiXSntRtTCnR1Rz07LloVAoB0SGGDHXMEQT2OMAdWW5hbhVkAAwGfoJibO6Cll0ijCAedpqeZrx2UlVKNlXEwcIYbOoVSfFEsm7ZvfcS6XIfGZAKHvJR8R8BZmbxBwGE8onHAC3CyJdhELsq+t9zd41Ln50/JlbJwsOCqUhEAIfkEBQoACwAsAAAAABgAFwAABHFwyUlrEjXrSRKpwbCJVGJShKJoxFee0qAmbItMJi0laqANrQIOFphtFoUWKbcwqBSkTcvFLKhczUDghsJSZIAJQqs1SAwEzJEiIIcO643B7Ytvxlv7Wq3vxw8IAoKDfguBg4R+gIiChY6PkJGSR2F9EQAh+QQFCgALACwBAAAAHQAOAAAEbnDJSacgNeu9CimZwE0GUhEoVSTJKAWBOKGYJLD1CAfGnEoElsu28+VwQ8kAZlrQFgdWQkbaGIrOVIAFmgQUisFBgOhNljFNS5kAK3hk8kFyCABGAIJbUQPEyUkLe1MUY39JX29WZGZDBY1WgRsRACH5BAUKAAsALAcAAAAZABEAAARmcMm5QAA06z3CyN+2HEYWnBlBiIKATWdAqeLSCgeMSoUaaoabTrYYqAo1W6u0iElUq+RB2NzRMomEgAJYagQEJjib+DJrBXICmdyoo5Rtu5idtwM5u36vUfj/CT96f4QKfAuFCoERACH5BAUKAAsALA4AAAASABgAAARk0Ayzqr1YDLwQ5csgXkMQgOFYGeYJilvVIihcIS2axu33jgJTrDIgEFCAwMFSMBKGIIrzqKtMC7Sq9anter+VhHhM1Y3PiSo6QRCAvUpwQKFwden0BBRJwCvKVQMJeHZacwpuEQAh+QQFCgALACwOAAAAEgAeAAAEe/Cgs6q9GAmU8d3CNwxeBV5jWJ7mCJQLC4wkzNKwuS3zoJqBgKFk+BmCQU7uMEAGajmnMGcBJKkdrFZL6HoLv5J3TKCSCYWt2kJRDxKJNRxOCMMMhXkiXQooXjEEcyUFCgplF4JEhgpQWH4KcWoJhgFqAoxrBIZtW08lEQAh+QQFCgALACwPAAEAEQAfAAAEd3DJucyhGAMhsj8c4mUIZ4yUEaJUeLHVOqnCm6alyW4hwIYc24h2gkmKxqQnwGwOfKOmNICaBp7KbFJAIAyS3W5BGSaMBglKIfylBBKJ8eRrXijuEnii47krJnB1GX4TBHAjhICHg3gTBYsYiS0eCQppSQMKbUYRACH5BAUKAAsALAgADgAYABIAAARscMlJ6xI4o2P71JrngRgnnqgopCcQBAjbvbQhU8dAB4MsELaFYReTABSBDoFQQbyCC4JCUVgkrpIlUzSYKjjXhGSwrHoS06QVKykse5bAVCwJU7QdtAK+pk+WHVNbdWwTfBU6FQQJgzcffikRACH5BAUKAAsALAIAEgAdAA4AAARwcMlJq13mUlO0NYKQXYGiBB6FhOGhJqaZqqwASESsELcHBC7MqlUyJQYSw9EiCASQE5BoYEJNCokEisCVOIGa4ESQTeC6C8R3NiFk2+jFwIlgL7IEeD65nrkTAnoUc1YpWR2CKiMpgRUFBIh2bHtsEQAh+QQFCgALACwAAA8AGQARAAAEZHAkReu6OOtbu9pgJnlfaJ7oeQQpmiRDCxLvK2dFnRSoIWw1wu8i3PgEgIzApiEQLoHoRUA9oJzPRZS1OCJOBWdMK51WQwMnD1ruUoezLJt7AVBDTs1WY7CiNQMBYzcaAAFJGxEAIfkEBQoACwAsAQAIABEAGAAABFhQKBWWvfiGqdLI4EJwCgGE2JCQaLZRbWZUcW3feK7v6EAQNkTh96sRgYaW71e4HAIn0O9zGQQCgoVgi5pdLdts6IoFc0EI8iU8vibNYld5fZbF4bgD4hABACH5BAUKAAsALAAAAgAOAB0AAARscMm5RqB4KkUy3orgTcGWjFOyXegAGmlHEVuRJgkhLoDCSgUcrgDzCAjCE2qBGywXh+dSUCBYr5mrVkahbrnS8A6FCAQAI4N57bGsB1FM2TxASwRxqBlBAQjwKAd/Y0Z/RR4Gg1OGi3aBhwsRADs=" data-was-processed="true"></div>
+                                            <picture class="c-product-item__media is-active" data-component="color-media" data-id="black">
+                <img title="Lunettes de soleil femme CARMEN noir" class="loaded" alt="Lunettes de soleil femme CARMEN noir" src="https://www.afflelou.com/fstrz/r/s/media.afflelou.com/F8STsgAl2NwQo3mAKE9U1Az03Gs=/780x390/afflelou/france/products/07630036406212_face.png?frz-v=805" data-was-processed="true" itemprop="image">
+            </picture>
+                                                    </a>
+
+        
+            <a class="c-product-item__name" href="https://www.afflelou.com/lunettes-de-soleil-femme/afflelou/carmen-carmen-c1-4921-black.html">
+            <span class="c-product-item__name u-txt-uppercase" itemprop="name">
+                                    AFFLELOU
+                                CARMEN
+            </span>
+        </a>
+    
+                <p class="c-product-item__price u-m-n" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
+        <meta content="EUR" itemprop="priceCurrency">
+                            <span style="margin-left:0.5em;" itemprop="price" content="59.00">59€</span>
+                            <br>
+                </p>
+    
+        </article>
+
+                    </li>
+                                                                                                                                                                                                                                                                                                                                                                                                                            <li class="c-product-selection__item swiper-slide swiper-slide-active" style="margin-right: 14px;" itemprop="isRelatedTo" data-swiper-slide-index="1">
+                            
+
+                                    
+<article class="c-category-push__item c-product-item u-pb-lg " data-component="product" itemtype="http://schema.org/Product" itemscope="">
+    <a class="c-product-item__img " href="/lunettes-de-soleil-femme/afflelou/betty-betty-bl01-5517-blue.html" data-role="datalayer-push-click" data-elements='{"event":"productClick","ecommerce":{"currencyCode":"EUR","click":{"actionField":{"list":"product"},"products":{"name":"BETTY - Bleu Dore","id":"07630036433836","price":"59.00","brand":"AFFLELOU","category":"frame\/sunglasses\/women","quantity":1}}}}' itemprop="url">
+        <div class="c-product-item__placeholder"><img class="loading" alt="Chargement de l'image" src="data:image/gif;base64,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" data-was-processed="true"></div>
+                                            <picture class="c-product-item__media is-active" data-component="color-media" data-id="blue">
+                <img title="Lunettes de soleil femme BETTY bleu/doré" class="loaded" alt="Lunettes de soleil femme BETTY bleu/doré" src="https://www.afflelou.com/fstrz/r/s/media.afflelou.com/cbKsdJMt5-XPrtTIVIFMS8zzHMQ=/780x390/afflelou/france/products/07630036433836_face.png?frz-v=805" data-was-processed="true" itemprop="image">
+            </picture>
+                                                    </a>
+
+        
+            <a class="c-product-item__name" href="https://www.afflelou.com/lunettes-de-soleil-femme/afflelou/betty-betty-bl01-5517-blue.html">
+            <span class="c-product-item__name u-txt-uppercase" itemprop="name">
+                                    AFFLELOU
+                                BETTY
+            </span>
+        </a>
+    
+                <p class="c-product-item__price u-m-n" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
+        <meta content="EUR" itemprop="priceCurrency">
+                            <span style="margin-left:0.5em;" itemprop="price" content="59.00">59€</span>
+                            <br>
+                </p>
+    
+        </article>
+
+                    </li>
+                                                                                                                                                                                                                                                                                                                                                                                                                            <li class="c-product-selection__item swiper-slide swiper-slide-next" style="margin-right: 14px;" itemprop="isRelatedTo" data-swiper-slide-index="2">
+                            
+
+                                    
+<article class="c-category-push__item c-product-item u-pb-lg " data-component="product" itemtype="http://schema.org/Product" itemscope="">
+    <a class="c-product-item__img " href="/lunettes-de-soleil-femme/afflelou/tutti-tutti-pk01-5120-pink.html" data-role="datalayer-push-click" data-elements='{"event":"productClick","ecommerce":{"currencyCode":"EUR","click":{"actionField":{"list":"product"},"products":{"name":"TUTTI - Rose","id":"07630036434499","price":"59.00","brand":"AFFLELOU","category":"frame\/sunglasses\/women","quantity":1}}}}' itemprop="url">
+        <div class="c-product-item__placeholder"><img class="loading" alt="Chargement de l'image" src="data:image/gif;base64,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" data-was-processed="true"></div>
+                                            <picture class="c-product-item__media is-active" data-component="color-media" data-id="pink">
+                <img title="Lunettes de soleil femme TUTTI rose" class="loaded" alt="Lunettes de soleil femme TUTTI rose" src="https://www.afflelou.com/fstrz/r/s/media.afflelou.com/gAK4lJ-NSnLA5wommwTv8EtLvpA=/780x390/afflelou/france/products/07630036434499_face.png?frz-v=805" data-was-processed="true" itemprop="image">
+            </picture>
+                                                    </a>
+
+        
+            <a class="c-product-item__name" href="https://www.afflelou.com/lunettes-de-soleil-femme/afflelou/tutti-tutti-pk01-5120-pink.html">
+            <span class="c-product-item__name u-txt-uppercase" itemprop="name">
+                                    AFFLELOU
+                                TUTTI
+            </span>
+        </a>
+    
+                <p class="c-product-item__price u-m-n" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
+        <meta content="EUR" itemprop="priceCurrency">
+                            <span style="margin-left:0.5em;" itemprop="price" content="59.00">59€</span>
+                            <br>
+                </p>
+    
+        </article>
+
+                    </li>
+                                                                                                                                                                                                                                                                                                                                                                                                                            <li class="c-product-selection__item swiper-slide" style="margin-right: 14px;" itemprop="isRelatedTo" data-swiper-slide-index="3">
+                            
+
+                                    
+<article class="c-category-push__item c-product-item u-pb-lg " data-component="product" itemtype="http://schema.org/Product" itemscope="">
+    <a class="c-product-item__img " href="/lunettes-de-soleil-femme/afflelou/romy-saf8397-pkgd-4820-pink.html" data-role="datalayer-push-click" data-elements='{"event":"productClick","ecommerce":{"currencyCode":"EUR","click":{"actionField":{"list":"product"},"products":{"name":"SAF8397 - Rose Dore","id":"07630036450642","price":"59.00","brand":"AFFLELOU","category":"frame\/sunglasses\/women","quantity":1}}}}' itemprop="url">
+        <div class="c-product-item__placeholder"><img class="loading" alt="Chargement de l'image" src="data:image/gif;base64,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" data-was-processed="true"></div>
+                                            <picture class="c-product-item__media is-active" data-component="color-media" data-id="pink">
+                <img title="Lunettes de soleil femme ROMY rose/doré" class="loaded" alt="Lunettes de soleil femme ROMY rose/doré" src="https://www.afflelou.com/fstrz/r/s/media.afflelou.com/JU5Ooimr6i_fgWfo94_KYAFiaSs=/780x390/afflelou/france/products/07630036450642_face.png?frz-v=805" data-was-processed="true" itemprop="image">
+            </picture>
+                                                    </a>
+
+        
+            <a class="c-product-item__name" href="https://www.afflelou.com/lunettes-de-soleil-femme/afflelou/romy-saf8397-pkgd-4820-pink.html">
+            <span class="c-product-item__name u-txt-uppercase" itemprop="name">
+                                    AFFLELOU
+                                ROMY
+            </span>
+        </a>
+    
+                <p class="c-product-item__price u-m-n" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
+        <meta content="EUR" itemprop="priceCurrency">
+                            <span style="margin-left:0.5em;" itemprop="price" content="59.00">59€</span>
+                            <br>
+                </p>
+    
+        </article>
+
+                    </li>
+                                                                                                                                                                                                                                                                                                                                                                                                                            <li class="c-product-selection__item swiper-slide" style="margin-right: 14px;" itemprop="isRelatedTo" data-swiper-slide-index="4">
+                            
+
+                                    
+<article class="c-category-push__item c-product-item u-pb-lg " data-component="product" itemtype="http://schema.org/Product" itemscope="">
+    <a class="c-product-item__img " href="/lunettes-de-soleil-femme/afflelou/salsa-salsa-gdbl-5021-gold.html" data-role="datalayer-push-click" data-elements='{"event":"productClick","ecommerce":{"currencyCode":"EUR","click":{"actionField":{"list":"product"},"products":{"name":"SALSA - Dore Bleu","id":"07630036451236","price":"59.00","brand":"AFFLELOU","category":"frame\/sunglasses\/women","quantity":1}}}}' itemprop="url">
+        <div class="c-product-item__placeholder"><img class="loading" alt="Chargement de l'image" src="data:image/gif;base64,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" data-was-processed="true"></div>
+                                            <picture class="c-product-item__media is-active" data-component="color-media" data-id="gold">
+                <img title="Lunettes de soleil femme SALSA doré/bleu" class="loading" alt="Lunettes de soleil femme SALSA doré/bleu" src="https://www.afflelou.com/fstrz/r/s/media.afflelou.com/Ng3XPkQc4upiY-leVhwdAzLTysg=/780x390/afflelou/france/products/07630036451236_face.png?frz-v=805" data-was-processed="true" itemprop="image">
+            </picture>
+                                                    </a>
+
+        
+            <a class="c-product-item__name" href="https://www.afflelou.com/lunettes-de-soleil-femme/afflelou/salsa-salsa-gdbl-5021-gold.html">
+            <span class="c-product-item__name u-txt-uppercase" itemprop="name">
+                                    AFFLELOU
+                                SALSA
+            </span>
+        </a>
+    
+                <p class="c-product-item__price u-m-n" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
+        <meta content="EUR" itemprop="priceCurrency">
+                            <span style="margin-left:0.5em;" itemprop="price" content="59.00">59€</span>
+                            <br>
+                </p>
+    
+        </article>
+
+                    </li>
+                            <li class="c-product-selection__item swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev" style="margin-right: 14px;" itemprop="isRelatedTo" data-swiper-slide-index="0">
+                            
+
+                                    
+<article class="c-category-push__item c-product-item u-pb-lg " data-component="product" itemtype="http://schema.org/Product" itemscope="">
+    <a class="c-product-item__img " href="/lunettes-de-soleil-femme/afflelou/carmen-carmen-c1-4921-black.html" data-role="datalayer-push-click" data-elements='{"event":"productClick","ecommerce":{"currencyCode":"EUR","click":{"actionField":{"list":"product"},"products":{"name":"CARMEN - Noir","id":"07630036406212","price":"59.00","brand":"AFFLELOU","category":"frame\/sunglasses\/women","quantity":1}}}}' itemprop="url">
+        <div class="c-product-item__placeholder"><img class="loading" alt="Chargement de l'image" src="data:image/gif;base64,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" data-was-processed="true"></div>
+                                            <picture class="c-product-item__media is-active" data-component="color-media" data-id="black">
+                <img title="Lunettes de soleil femme CARMEN noir" class="loading" alt="Lunettes de soleil femme CARMEN noir" src="https://www.afflelou.com/fstrz/r/s/media.afflelou.com/F8STsgAl2NwQo3mAKE9U1Az03Gs=/780x390/afflelou/france/products/07630036406212_face.png?frz-v=805" data-was-processed="true" itemprop="image">
+            </picture>
+                                                    </a>
+
+        
+            <a class="c-product-item__name" href="https://www.afflelou.com/lunettes-de-soleil-femme/afflelou/carmen-carmen-c1-4921-black.html">
+            <span class="c-product-item__name u-txt-uppercase" itemprop="name">
+                                    AFFLELOU
+                                CARMEN
+            </span>
+        </a>
+    
+                <p class="c-product-item__price u-m-n" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
+        <meta content="EUR" itemprop="priceCurrency">
+                            <span style="margin-left:0.5em;" itemprop="price" content="59.00">59€</span>
+                            <br>
+                </p>
+    
+        </article>
+
+                    </li><li class="c-product-selection__item swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" style="margin-right: 14px;" itemprop="isRelatedTo" data-swiper-slide-index="1">
+                            
+
+                                    
+<article class="c-category-push__item c-product-item u-pb-lg " data-component="product" itemtype="http://schema.org/Product" itemscope="">
+    <a class="c-product-item__img " href="/lunettes-de-soleil-femme/afflelou/betty-betty-bl01-5517-blue.html" data-role="datalayer-push-click" data-elements='{"event":"productClick","ecommerce":{"currencyCode":"EUR","click":{"actionField":{"list":"product"},"products":{"name":"BETTY - Bleu Dore","id":"07630036433836","price":"59.00","brand":"AFFLELOU","category":"frame\/sunglasses\/women","quantity":1}}}}' itemprop="url">
+        <div class="c-product-item__placeholder"><img class="loading" alt="Chargement de l'image" src="data:image/gif;base64,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" data-was-processed="true"></div>
+                                            <picture class="c-product-item__media is-active" data-component="color-media" data-id="blue">
+                <img title="Lunettes de soleil femme BETTY bleu/doré" class="loading" alt="Lunettes de soleil femme BETTY bleu/doré" src="https://www.afflelou.com/fstrz/r/s/media.afflelou.com/cbKsdJMt5-XPrtTIVIFMS8zzHMQ=/780x390/afflelou/france/products/07630036433836_face.png?frz-v=805" data-was-processed="true" itemprop="image">
+            </picture>
+                                                    </a>
+
+        
+            <a class="c-product-item__name" href="https://www.afflelou.com/lunettes-de-soleil-femme/afflelou/betty-betty-bl01-5517-blue.html">
+            <span class="c-product-item__name u-txt-uppercase" itemprop="name">
+                                    AFFLELOU
+                                BETTY
+            </span>
+        </a>
+    
+                <p class="c-product-item__price u-m-n" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
+        <meta content="EUR" itemprop="priceCurrency">
+                            <span style="margin-left:0.5em;" itemprop="price" content="59.00">59€</span>
+                            <br>
+                </p>
+    
+        </article>
+
+                    </li><li class="c-product-selection__item swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next" style="margin-right: 14px;" itemprop="isRelatedTo" data-swiper-slide-index="2">
+                            
+
+                                    
+<article class="c-category-push__item c-product-item u-pb-lg " data-component="product" itemtype="http://schema.org/Product" itemscope="">
+    <a class="c-product-item__img " href="/lunettes-de-soleil-femme/afflelou/tutti-tutti-pk01-5120-pink.html" data-role="datalayer-push-click" data-elements='{"event":"productClick","ecommerce":{"currencyCode":"EUR","click":{"actionField":{"list":"product"},"products":{"name":"TUTTI - Rose","id":"07630036434499","price":"59.00","brand":"AFFLELOU","category":"frame\/sunglasses\/women","quantity":1}}}}' itemprop="url">
+        <div class="c-product-item__placeholder"><img class="loading" alt="Chargement de l'image" src="data:image/gif;base64,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" data-was-processed="true"></div>
+                                            <picture class="c-product-item__media is-active" data-component="color-media" data-id="pink">
+                <img title="Lunettes de soleil femme TUTTI rose" class="loading" alt="Lunettes de soleil femme TUTTI rose" src="https://www.afflelou.com/fstrz/r/s/media.afflelou.com/gAK4lJ-NSnLA5wommwTv8EtLvpA=/780x390/afflelou/france/products/07630036434499_face.png?frz-v=805" data-was-processed="true" itemprop="image">
+            </picture>
+                                                    </a>
+
+        
+            <a class="c-product-item__name" href="https://www.afflelou.com/lunettes-de-soleil-femme/afflelou/tutti-tutti-pk01-5120-pink.html">
+            <span class="c-product-item__name u-txt-uppercase" itemprop="name">
+                                    AFFLELOU
+                                TUTTI
+            </span>
+        </a>
+    
+                <p class="c-product-item__price u-m-n" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
+        <meta content="EUR" itemprop="priceCurrency">
+                            <span style="margin-left:0.5em;" itemprop="price" content="59.00">59€</span>
+                            <br>
+                </p>
+    
+        </article>
+
+                    </li><li class="c-product-selection__item swiper-slide swiper-slide-duplicate" style="margin-right: 14px;" itemprop="isRelatedTo" data-swiper-slide-index="3">
+                            
+
+                                    
+<article class="c-category-push__item c-product-item u-pb-lg " data-component="product" itemtype="http://schema.org/Product" itemscope="">
+    <a class="c-product-item__img " href="/lunettes-de-soleil-femme/afflelou/romy-saf8397-pkgd-4820-pink.html" data-role="datalayer-push-click" data-elements='{"event":"productClick","ecommerce":{"currencyCode":"EUR","click":{"actionField":{"list":"product"},"products":{"name":"SAF8397 - Rose Dore","id":"07630036450642","price":"59.00","brand":"AFFLELOU","category":"frame\/sunglasses\/women","quantity":1}}}}' itemprop="url">
+        <div class="c-product-item__placeholder"><img class="loading" alt="Chargement de l'image" src="data:image/gif;base64,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" data-was-processed="true"></div>
+                                            <picture class="c-product-item__media is-active" data-component="color-media" data-id="pink">
+                <img title="Lunettes de soleil femme ROMY rose/doré" class="loading" alt="Lunettes de soleil femme ROMY rose/doré" src="https://www.afflelou.com/fstrz/r/s/media.afflelou.com/JU5Ooimr6i_fgWfo94_KYAFiaSs=/780x390/afflelou/france/products/07630036450642_face.png?frz-v=805" data-was-processed="true" itemprop="image">
+            </picture>
+                                                    </a>
+
+        
+            <a class="c-product-item__name" href="https://www.afflelou.com/lunettes-de-soleil-femme/afflelou/romy-saf8397-pkgd-4820-pink.html">
+            <span class="c-product-item__name u-txt-uppercase" itemprop="name">
+                                    AFFLELOU
+                                ROMY
+            </span>
+        </a>
+    
+                <p class="c-product-item__price u-m-n" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
+        <meta content="EUR" itemprop="priceCurrency">
+                            <span style="margin-left:0.5em;" itemprop="price" content="59.00">59€</span>
+                            <br>
+                </p>
+    
+        </article>
+
+                    </li><li class="c-product-selection__item swiper-slide swiper-slide-duplicate" style="margin-right: 14px;" itemprop="isRelatedTo" data-swiper-slide-index="4">
+                            
+
+                                    
+<article class="c-category-push__item c-product-item u-pb-lg " data-component="product" itemtype="http://schema.org/Product" itemscope="">
+    <a class="c-product-item__img " href="/lunettes-de-soleil-femme/afflelou/salsa-salsa-gdbl-5021-gold.html" data-role="datalayer-push-click" data-elements='{"event":"productClick","ecommerce":{"currencyCode":"EUR","click":{"actionField":{"list":"product"},"products":{"name":"SALSA - Dore Bleu","id":"07630036451236","price":"59.00","brand":"AFFLELOU","category":"frame\/sunglasses\/women","quantity":1}}}}' itemprop="url">
+        <div class="c-product-item__placeholder"><img class="loading" alt="Chargement de l'image" src="data:image/gif;base64,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" data-was-processed="true"></div>
+                                            <picture class="c-product-item__media is-active" data-component="color-media" data-id="gold">
+                <img title="Lunettes de soleil femme SALSA doré/bleu" class="loading" alt="Lunettes de soleil femme SALSA doré/bleu" src="https://www.afflelou.com/fstrz/r/s/media.afflelou.com/Ng3XPkQc4upiY-leVhwdAzLTysg=/780x390/afflelou/france/products/07630036451236_face.png?frz-v=805" data-was-processed="true" itemprop="image">
+            </picture>
+                                                    </a>
+
+        
+            <a class="c-product-item__name" href="https://www.afflelou.com/lunettes-de-soleil-femme/afflelou/salsa-salsa-gdbl-5021-gold.html">
+            <span class="c-product-item__name u-txt-uppercase" itemprop="name">
+                                    AFFLELOU
+                                SALSA
+            </span>
+        </a>
+    
+                <p class="c-product-item__price u-m-n" itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
+        <meta content="EUR" itemprop="priceCurrency">
+                            <span style="margin-left:0.5em;" itemprop="price" content="59.00">59€</span>
+                            <br>
+                </p>
+    
+        </article>
+
+                    </li></ul>
+        </div>
+    </div>
+</aside>
+          <!--//slider-->
+        </div>
+      </div>
+    </section>
+
+    
+
+    <!--footer -->
+    
+    <!-- //footer -->
+
+    <!--jQuery-->
+    
+    <script src="https://www.afflelou.com/fstrz/r/s/www.afflelou.com/js/modernizr.js?frz-v=805"></script>
+    <script src="https://www.afflelou.com/fstrz/r/s/www.afflelou.com/js/vendor.js?frz-v=805"></script>
+    <script src="https://www.afflelou.com/fstrz/r/s/www.afflelou.com/js/main.js?frz-v=805"></script>
+    
+</body>
+
+</html>
+
+        {% endblock %}
+
+
+
+
+</body>
+</html>

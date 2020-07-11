@@ -1,0 +1,263 @@
+{% extends "navbarjdida.html" %}
+{% load static%}
+{% block title %} Connexion {%endblock %}
+
+    {% block navfot %}
+
+<main>
+    <!--<div class="container-fluid" style="background-color: #eee">
+        <h2 class="c-title--checkout registration u-txt-center@sm u-txt-center@md u-txt-left@lg mt-5">Identification</h2>
+
+
+
+<form method="post" action="{% url 'login' %}">
+{% csrf_token %}
+<div class="row signup">
+
+    <div class="col-6 " >
+        <div class="text-center">
+        <span>Déjà client ?</span>
+        </div>
+        {% if form.errors %}
+<p>Your username and password didn't match. Please try again.</p>
+{% endif %}
+
+{% if next %}
+    {% if user.is_authenticated %}
+    <p>Your account doesn't have access to this page. To proceed,
+    please login with an account that has access.</p>
+    {% else %}
+    <p>Please login to see this page.</p>
+    {% endif %}
+{% endif %}
+{% if messages %}
+{% for message in messages %}
+<div class="alert alert-{{message.tags}}">{{message}}</div>
+{% endfor%}
+{% endif%}
+        <div class="mt-5 pl-5">
+        <input style="width: 80%" class="c-field u-block" placeholder="Username" name="username" id="id_username" autofocus="" required="" type="text" maxlength="150" autocomplete="username" autocapitalize="none">
+        
+    </div>
+    
+    
+    <div class="mt-4 pl-5">
+        <input style="width: 80%" class="c-field u-block" placeholder="Mot de passe" name="password" id="id_password" required="" type="password" autocomplete="current-password">-->
+
+       <!-- <input type="submit" value="login">
+        <input type="hidden" name="next" value="{{ next }}">-->
+        <!--</form>
+
+        <p class="mt-2"><a href="{% url 'password_reset' %}">
+Mot de passe oublié ?</a></p>
+        <button style="width: 200px;height: 50px" type="submit" class="btn btn-secondary btn-lg btn-block mt-3 " value="login">Se connecter</button>
+         {# Assumes you setup the password_reset view in your URLconf #}
+        
+            </div>
+        
+    </div>
+    <div style="border-left: 1px solid #DCDCDC;
+        height: 400px;"></div>
+    <div class="col-5 ">
+        <div class="text-center" >
+
+        <span class="">Nouveau client ?</span>
+        
+    </div>
+    
+    
+    <div class="mt-5 pl-5">
+        <p>Créez votre compte client Jumia en quelques clics ! Vous pouvez vous inscrire soit en utilisant votre adresse e-mail, soit via votre compte Facebook.via votre compte Facebook.via votre compte Facebook.via votre compte Facebook.via votre compte Facebook.via votre compte Facebook. </p>
+    </div>
+    <div class="pl-5">
+    <a style="width: 200px;height: 50px" type="submit" class="btn btn-secondary btn-lg btn-block " href="{% url 'accounts:signup' %}" >Se connecter</a>
+
+    </div>
+        
+    </div>
+    
+
+   </div> 
+   
+
+
+
+
+</div>
+</main>-->
+
+<main class="c-page__main" data-component="ga-loading">
+       
+<div class="u-brd-tp u-pt-xl u-pb-lg o-checkout__content mt-5">
+            <div class="o-container o-checkout__inner">
+                <h2 class="c-title--checkout registration u-txt-center@sm u-txt-center@md u-txt-left@lg">Identification</h2>
+                <div class="o-grid o-grid--large o-grid--1@md">
+                    <div class="o-grid__item o-grid__item--col-6">
+                        <!--<li><a href="{% url 'social:begin' 'facebook' %}">Signin With Facebook</a> </li>-->
+
+                        <div class="c-login u-grid-pad u-bgcolor-white" data-component="accordion">
+                            <h2 class="c-login__title c-title--legend is-expanded" data-role="tab">Déjà client ?</h2>
+                            <form class="c-login__form" action="{% url 'login' %}" method="post" data-component="checkbox-required" data-role="panel">
+                                {%csrf_token%}
+                                <div class="c-login__form__inner">
+                                                                                                            <div class="o-grid o-grid--1@sm">
+                                        <div class="o-grid__item o-grid__item--col-12">
+                                            <input  class="c-field u-block" placeholder="Username" name="username" id="id_username" autofocus="" required="" type="text" maxlength="150" autocomplete="username" autocapitalize="none">
+                                        </div>
+                                        <div class="o-grid__item o-grid__item--col-12">
+                                            <input  class="c-field u-block" placeholder="Mot de passe" name="password" id="id_password" required="" type="password" autocomplete="current-password">
+                                        </div>
+                                        <div class="o-grid__item o-grid__item--col-12">
+                                            <a class="c-login__helplink" href="{% url 'password_reset' %}" >
+                                                Mot de passe oublié ?
+                                            </a>
+                                        </div>
+                                        <div class="o-grid__item o-grid__item--col-8">
+                                        </div>
+                                        <div class="o-grid__item o-grid__item--col-4 u-flex u-flex-main-end">
+                                            <button class="c-login__btn c-btn c-btn--large c-btn--long u-block@sm" type="submit" value="login">Me connecter</button>
+                                        </div>
+                                    </div>
+
+                                    <input name="_target_path" type="hidden" value="account_index">
+                                    <input name="_failure_path" type="hidden" value="security_register">
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="o-modal o-modal--large o-modal--white o-modal--border modal-reset-password">
+                            <article class="o-modal__inner">
+                                <p class="c-btn--unstyled o-modal__close" data-dismiss="modal">
+                                    <mark class="svgbox svgbox--small"><svg xmlns="http://www.w3.org/2000/svg" id="4ce14fa7-468f-4648-8441-737dafec1df0" viewBox="0 0 24 24" data-name="cross"><title>cross</title><polygon points="23.5,21.88 13.62,12 23.26,2.36 21.64,0.74 12,10.38 2.12,0.5 0.5,2.12 10.38,12 0.74,21.64 2.36,23.26 12,13.62 21.88,23.5 23.5,21.88" /></svg>
+</mark>
+                                </p>
+                                <h3>Réinitialiser mon mot de passe</h3>
+                                <div class="js-load-initial-content-target">
+                                    modal.loading
+                                </div>
+                            </article>
+                        </div>
+
+                    </div>
+                    <div class="o-grid__item o-grid__item--col-6" data-component="ga-loading">
+                        
+
+<div class="c-login u-grid-pad u-bgcolor-white">
+    <h2 class="c-login__title c-title--legend">Nouveau client ?</h2>
+    <div class="c-login__text">
+        <p>Créer un compte</p>
+    </div>
+ <div class="mt-5 ">
+        <p>Pour vous inscrire à Gmail, vous devez créer un compte Google. Le nom d'utilisateur et le mot de passe vous permettront de vous connecter à Gmail et à d'autres produits Google tels que YouTube, Google Play et Google Drive. Ouvrez la page de création d'un compte Google. Suivez la procédure qui s'affiche pour configurer votre compte.
+        Suivez la procédure qui s'affiche pour configurer votre compte. Suivez la procédure qui s'affiche pour configurer votre compte.</p>
+    </div>
+                     <div class="pl-5">
+    <!--<a style="width: 200px;height: 50px" type="submit" class="btn btn-secondary btn-lg btn-block " href="{% url 'accounts:signup' %}" >Se connecter</a>
+
+    </div>-->
+    <div class="c-form-submit u-txt-right u-mt-n">
+                    
+                    <a class="c-login__btn c-btn c-btn--large c-btn--long u-block@sm" type="submit" href="{% url 'accounts:signup' %}" >Créer mon compte </a>
+                </div>
+    
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<section class="u-pt-md u-pb-md">
+            <div class="c-helplinks o-container">
+    <ul class="c-helplinks__list">
+            <li class="c-helplinks__item  u-hidden@sm">
+        <a class="c-helplinks__link" href="https://www.afflelou.com/lunettes/?filters%5Bproducts.marketing.virtualTryOn%5D%5B0%5D=1">
+            <mark class="svgbox svgbox--medium svgbox--round"><svg xmlns="http://www.w3.org/2000/svg" id="b18d4a4f-dd0c-4f89-b4d9-2254171263eb" viewBox="0 0 24 24" data-name="camera"><title>camera</title><path d="M 22.84 6.12 a 1 1 0 0 0 -0.75 0 L 17.37 8.88 V 8.17 A 2.33 2.33 0 0 0 15 5.81 H 2.86 A 2.33 2.33 0 0 0 0.5 8.17 v 7.66 a 2.33 2.33 0 0 0 2.36 2.36 H 15 a 2.33 2.33 0 0 0 2.36 -2.36 v -0.75 l 5 2.92 c 0.09 0.09 0.19 0.09 0.38 0.09 a 0.71 0.71 0 0 0 0.38 -0.09 a 0.79 0.79 0 0 0 0.38 -0.66 V 6.69 C 23.22 6.5 23.12 6.22 22.84 6.12 Z m -7.07 9.61 a 1 1 0 0 1 -0.94 0.94 H 2.76 a 1 1 0 0 1 -0.94 -0.94 V 8.29 a 1 1 0 0 1 0.94 -0.94 H 14.83 a 1 1 0 0 1 0.94 0.94 v 7.45 Z m 6 0.38 l -4.62 -2.64 V 10.74 L 21.8 8 Z" /></svg>
+</mark>
+            <h4 class="c-helplinks__text">
+            Essayage 3D en ligne
+        </h4>
+        </a>
+    </li>
+                            <li class="c-helplinks__item">
+        <a class="c-helplinks__link" href="https://www.afflelou.com/services/expedition">
+            <mark class="svgbox svgbox--medium svgbox--round picto--expedition"><!--?xml version="1.0" encoding="utf-8"?-->
+<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg xmlns="http://www.w3.org/2000/svg" id="b18d4a4f-dd0c-4f89-b4d9-2254171263eb" style="enable-background:new 0 0 24 24;" viewBox="0 0 24 24" x="0px" y="0px" xmlns:xml="http://www.w3.org/XML/1998/namespace" xml:space="preserve" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+<title>camera</title>
+<g>
+    <path d="M 13.9 4.7 c -0.4 0 -0.7 0.3 -0.7 0.7 v 6.5 c 0 0.2 0.1 0.4 0.2 0.5 l 2.9 2.3 c 0.1 0.1 0.3 0.1 0.4 0.1 c 0.2 0 0.4 -0.1 0.5 -0.2 c 0.2 -0.3 0.2 -0.7 -0.1 -0.9 l -2.6 -2.1 V 5.3 C 14.6 5 14.3 4.7 13.9 4.7 Z" />
+    <path d="M 9.9 16.4 c 0.4 0 0.7 -0.3 0.7 -0.7 c 0 -0.4 -0.3 -0.7 -0.7 -0.7 H 5.5 c -0.4 0 -0.7 0.3 -0.7 0.7 c 0 0.4 0.3 0.7 0.7 0.7 H 9.9 Z" />
+    <path d="M 0.7 12.2 h 3.2 c 0 0.4 0 0.7 0.1 1 c 0.1 0.4 0.4 0.6 0.7 0.6 h 0.1 c 0.4 -0.1 0.7 -0.4 0.6 -0.7 c -0.1 -0.3 -0.1 -0.6 -0.1 -0.9 h 2.9 c 0.4 0 0.7 -0.3 0.7 -0.7 c 0 -0.4 -0.3 -0.7 -0.7 -0.7 H 0.7 c -0.4 0 -0.7 0.3 -0.7 0.7 C 0 11.9 0.3 12.2 0.7 12.2 Z" />
+    <path d="M 2.6 7.9 h 2.1 L 4.4 8.5 c -0.1 0.4 0 0.7 0.3 0.9 C 4.8 9.5 5 9.5 5 9.5 c 0.2 0 0.5 -0.1 0.6 -0.4 L 6.2 8 c 0 -0.1 0.1 -0.1 0.1 -0.1 c 1.5 -2.9 4.4 -4.7 7.7 -4.7 c 4.8 0 8.7 3.9 8.7 8.7 s -3.9 8.7 -8.7 8.7 c -2.4 0 -4.6 -0.9 -6.3 -2.6 c -0.3 -0.3 -0.7 -0.3 -0.9 0 c -0.3 0.3 -0.3 0.7 0 0.9 c 1.9 2 4.4 3.1 7.2 3.1 c 5.5 0 10 -4.5 10 -10 s -4.5 -10 -10 -10 c -3.5 0 -6.7 1.8 -8.5 4.7 c -0.1 0 -0.1 0 -0.1 0 H 2.7 C 2.3 6.6 2 6.9 2 7.3 C 2 7.7 2.3 7.9 2.6 7.9 Z" />
+    <path d="M 13.2 19 c 0 0.4 0.3 0.7 0.7 0.7 c 0.4 0 0.7 -0.3 0.7 -0.7 v -0.1 c 0 -0.4 -0.3 -0.7 -0.7 -0.7 C 13.5 18.2 13.2 18.5 13.2 19 L 13.2 19 Z" />
+    <path d="M 21.3 12.5 c 0.4 0 0.7 -0.3 0.7 -0.7 c 0 -0.4 -0.3 -0.7 -0.7 -0.7 h -0.1 c -0.4 0 -0.7 0.3 -0.7 0.7 C 20.6 12.2 20.9 12.5 21.3 12.5 L 21.3 12.5 Z" />
+    <path d="M 2.6 16.4 h 0.7 c 0.4 0 0.7 -0.3 0.7 -0.7 c 0 -0.4 -0.3 -0.7 -0.7 -0.7 H 2.6 c -0.4 0 -0.7 0.3 -0.7 0.7 C 1.8 16.1 2.1 16.4 2.6 16.4 Z" />
+</g>
+</svg>
+</mark>
+            <h4 class="c-helplinks__text">
+            Expédition rapide
+        </h4>
+        </a>
+    </li>
+            <li class="c-helplinks__item">
+        <a class="c-helplinks__link" href="https://www.afflelou.com/services/retour-et-retrait-gratuit">
+            <mark class="svgbox svgbox--medium svgbox--round picto--retrait"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.78 33.14"><defs><style>.\36 b076547-1769-45a5-b9b5-a58d8ba14887{fill:none;}.\32 0f841ad-d6f0-4181-b5b3-d3b74694058d{stroke-miterlimit:10;stroke-width:0.5px;}</style></defs><title>Fichier 26</title><g id="7595aa27-9b79-446f-ad5d-7a8f4ee0f326" data-name="Calque 2"><g id="fe3b9bd5-6780-4d33-a9f3-09509cbd53d4" data-name="Calque 2"><path class="6b076547-1769-45a5-b9b5-a58d8ba14887" d="M 6.36 11.51 V 22 a 0.14 0.14 0 0 1 0.14 0.14 l 8.25 3.38 V 14.84 Z" /><path class="6b076547-1769-45a5-b9b5-a58d8ba14887" d="M 23.67 10.5 L 15.89 7.31 a 0.44 0.44 0 0 0 -0.57 0 L 12.53 8.5 l 7.69 3.36 Z" /><path class="6b076547-1769-45a5-b9b5-a58d8ba14887" d="M 21.43 12.8 v 2.33 c -0.14 0.42 -0.43 0.71 -0.71 0.71 a 0.76 0.76 0 0 1 -0.71 -0.71 V 13.38 L 16.17 15 V 25.53 l 2.26 -0.93 A 5.22 5.22 0 0 1 18 22.5 a 5.31 5.31 0 0 1 5.31 -5.31 a 5.37 5.37 0 0 1 1.39 0.21 V 11.46 Z" /><path class="6b076547-1769-45a5-b9b5-a58d8ba14887" d="M 18.77 12.43 L 11.34 9.3 a 1.83 1.83 0 0 1 -0.24 -0.19 L 7.38 10.69 l 7.9 3.12 Z" /><path d="M 14.75 26.21 v -0.74 L 6.5 22.09 A 0.14 0.14 0 0 0 6.36 22 V 11.51 l -0.57 -0.22 a 0.52 0.52 0 0 1 -0.28 -0.71 a 0.63 0.63 0 0 1 0.85 -0.29 l 1 0.4 L 11.1 9.11 a 0.54 0.54 0 0 1 -0.19 -0.66 c 0.28 -0.29 0.57 -0.57 0.85 -0.29 l 0.77 0.34 l 2.79 -1.19 a 0.44 0.44 0 0 1 0.57 0 l 7.78 3.19 l 0.89 -0.35 a 0.64 0.64 0 1 1 0.56 1.14 l -0.42 0.17 V 17.4 a 5.14 5.14 0 0 1 1.14 0.46 V 11 a 1.54 1.54 0 0 0 -1 -1.28 L 16.17 6.17 a 2.94 2.94 0 0 0 -1.56 0 L 5.94 9.72 a 1.33 1.33 0 0 0 -1 1.28 V 22 a 1.53 1.53 0 0 0 1 1.28 l 8.67 3.55 c 0.28 0 0.56 0.14 0.85 0.14 A 0.75 0.75 0 0 1 14.75 26.21 Z" /><path d="M 16.17 25.53 v 0.83 c 0 0.28 -0.43 0.56 -0.71 0.56 a 6.32 6.32 0 0 0 0.71 -0.14 L 19 25.61 a 5.34 5.34 0 0 1 -0.59 -1 Z" /><path d="M 15.74 15.13 h -0.28 c -0.29 0 -0.43 -0.15 -0.57 -0.43 a 0.69 0.69 0 0 1 0.28 -0.85 l 0.11 0 l -7.9 -3.12 L 6.65 11 H 6.36 v 0.51 l 8.39 3.33 V 25.47 l 0.42 0.17 a 0.62 0.62 0 0 0 0.72 0 l 0.28 -0.11 V 15 Z" /><path d="M 6.65 11 l 0.73 -0.31 l -1 -0.4 a 0.63 0.63 0 0 0 -0.85 0.29 a 0.52 0.52 0 0 0 0.28 0.71 l 0.57 0.22 V 11 Z" /><path d="M 16.17 26.36 v -0.83 l -0.28 0.11 a 0.62 0.62 0 0 1 -0.72 0 l -0.42 -0.17 v 0.74 a 0.75 0.75 0 0 0 0.71 0.71 C 15.74 26.92 16.17 26.64 16.17 26.36 Z" /><path d="M 18.77 12.43 l -3.49 1.38 l 0.46 0.18 c 0.29 0.14 0.43 0.28 0.43 0.57 V 15 L 20 13.38 V 13 Z" /><path d="M 20.41 11.94 a 0.62 0.62 0 0 1 0.31 -0.08 a 0.76 0.76 0 0 1 0.71 0.71 v 0.23 l 3.27 -1.34 V 11 a 0.14 0.14 0 0 1 -0.14 -0.14 l -0.89 -0.36 l -3.45 1.36 Z" /><path d="M 24.7 11 v 0.46 l 0.42 -0.17 a 0.64 0.64 0 1 0 -0.56 -1.14 l -0.89 0.35 l 0.89 0.36 A 0.14 0.14 0 0 0 24.7 11 Z" /><path d="M 15.74 14 l -0.46 -0.18 l -0.11 0 a 0.69 0.69 0 0 0 -0.28 0.85 c 0.14 0.28 0.28 0.43 0.57 0.43 h 0.28 l 0.43 -0.18 v -0.39 C 16.17 14.27 16 14.13 15.74 14 Z" /><path d="M 18.77 12.43 l 1.45 -0.57 L 12.53 8.5 l -1.43 0.61 a 1.83 1.83 0 0 0 0.24 0.19 Z" /><path d="M 11.76 8.16 c -0.28 -0.28 -0.57 0 -0.85 0.29 a 0.54 0.54 0 0 0 0.19 0.66 l 1.43 -0.61 Z" /><path d="M 20 12.57 a 0.79 0.79 0 0 1 0.4 -0.63 l -0.19 -0.08 l -1.45 0.57 L 20 13 Z" /><path d="M 21.14 13 c 0 0.15 -0.28 0.29 -0.42 0.29 a 0.25 0.25 0 0 1 -0.23 -0.1 l -0.48 0.2 v 1.75 a 0.76 0.76 0 0 0 0.71 0.71 c 0.28 0 0.57 -0.29 0.71 -0.71 V 12.8 l -0.27 0.11 S 21.15 13 21.14 13 Z" /><path d="M 20.43 13.14 L 20 13 v 0.42 l 0.48 -0.2 Z" /><path d="M 20.72 11.86 a 0.62 0.62 0 0 0 -0.31 0.08 l 0.45 0.2 a 0.61 0.61 0 0 1 0.3 0.77 l 0.27 -0.11 v -0.23 A 0.76 0.76 0 0 0 20.72 11.86 Z" /><path d="M 20.72 13.28 c 0.14 0 0.42 -0.14 0.42 -0.29 s 0 -0.05 0 -0.08 l -0.67 0.27 A 0.25 0.25 0 0 0 20.72 13.28 Z" /><path d="M 20 12.57 V 13 l 0.42 0.18 l 0.06 0 l 0.67 -0.27 a 0.61 0.61 0 0 0 -0.3 -0.77 l -0.45 -0.2 A 0.79 0.79 0 0 0 20 12.57 Z" /><path class="20f841ad-d6f0-4181-b5b3-d3b74694058d" d="M 18.59 1.91 l 1.13 -0.71 l 0.15 -0.15 C 20 0.91 20 0.77 20 0.49 S 19.58 0.2 19.3 0.34 L 17 1.62 a 0.49 0.49 0 0 0 -0.14 0.29 c 0 0.28 0 0.42 0.14 0.42 l 1.71 2.14 a 0.63 0.63 0 0 0 0.71 0.14 c 0.28 -0.14 0.28 -0.43 0.14 -0.71 l -1 -1.28 A 13.94 13.94 0 0 1 29.67 15.84 a 0.43 0.43 0 0 0 0.86 0 A 14.84 14.84 0 0 0 18.59 1.91 Z" /><path class="20f841ad-d6f0-4181-b5b3-d3b74694058d" d="M 13.61 31.05 l -1.85 -2.28 a 0.63 0.63 0 0 0 -0.71 -0.14 a 0.63 0.63 0 0 0 -0.14 0.71 l 1 1.28 A 13.92 13.92 0 0 1 1 17.68 a 0.45 0.45 0 0 0 -0.43 -0.42 c -0.14 0 -0.28 0 -0.28 0.42 A 14.82 14.82 0 0 0 11.76 31.33 l -1.13 0.57 c -0.29 0.14 -0.29 0.43 -0.29 0.71 s 0.43 0.28 0.71 0.28 l 2.42 -1.28 l 0.28 -0.28 C 13.75 31.19 13.75 31.05 13.61 31.05 Z" /><path d="M 23.31 28.31 a 5.81 5.81 0 1 1 5.81 -5.81 A 5.81 5.81 0 0 1 23.31 28.31 Z m 0 -10.62 a 4.81 4.81 0 1 0 4.81 4.81 A 4.81 4.81 0 0 0 23.31 17.69 Z" /><path d="M 20.83 19.9 a 1.7 1.7 0 0 1 1.33 0.57 a 3.09 3.09 0 0 1 0.5 2 a 3.11 3.11 0 0 1 -0.5 2 a 1.83 1.83 0 0 1 -2.65 0 a 3 3 0 0 1 -0.51 -2 a 3 3 0 0 1 0.51 -2 A 1.69 1.69 0 0 1 20.83 19.9 Z m 0 0.8 a 0.58 0.58 0 0 0 -0.51 0.31 a 3.37 3.37 0 0 0 -0.19 1.46 a 3.33 3.33 0 0 0 0.19 1.46 a 0.6 0.6 0 0 0 0.51 0.31 a 0.57 0.57 0 0 0 0.51 -0.31 a 3.37 3.37 0 0 0 0.19 -1.46 A 3.37 3.37 0 0 0 21.34 21 A 0.56 0.56 0 0 0 20.83 20.7 Z" /><path d="M 27.19 20 L 27 21 A 1.47 1.47 0 0 0 26 20.7 a 1.25 1.25 0 0 0 -1.34 1 h 2.11 l -0.13 0.53 H 24.6 v 0.32 c 0 0.05 0 0.09 0 0.13 h 2 l -0.12 0.53 H 24.69 a 1.22 1.22 0 0 0 1.32 1 a 1.65 1.65 0 0 0 1.13 -0.41 v 1 A 2.71 2.71 0 0 1 26 25 a 2.63 2.63 0 0 1 -1.61 -0.48 a 2.33 2.33 0 0 1 -0.88 -1.38 h -0.58 l 0.13 -0.53 h 0.37 V 22.2 h -0.5 l 0.13 -0.53 h 0.46 a 2.39 2.39 0 0 1 0.91 -1.37 a 2.75 2.75 0 0 1 1.63 -0.47 A 2.93 2.93 0 0 1 27.19 20 Z" /></g></g></svg></mark>
+            <h4 class="c-helplinks__text">
+            Livraison et retour gratuits
+        </h4>
+        </a>
+    </li>
+            <li class="c-helplinks__item">
+        <a class="c-helplinks__link" href="https://www.afflelou.com/services/paiement-securise">
+            <mark class="svgbox svgbox--medium svgbox--round"><!--?xml version="1.0" encoding="utf-8"?-->
+<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg xmlns="http://www.w3.org/2000/svg" id="b18d4a4f-dd0c-4f89-b4d9-2254171263eb" style="enable-background:new 0 0 24 24;" viewBox="0 0 24 24" x="0px" y="0px" xmlns:xml="http://www.w3.org/XML/1998/namespace" xml:space="preserve" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+<path d="M 12.9 19.9 H 2.3 c -1.2 0 -2.3 -1 -2.3 -2.3 V 5.5 c 0 -1.2 1 -2.3 2.3 -2.3 h 19.4 c 1.2 0 2.3 1 2.3 2.3 v 4 c 0 0.4 -0.3 0.7 -0.7 0.7 c -0.4 0 -0.7 -0.3 -0.7 -0.7 v -4 c 0 -0.5 -0.4 -0.9 -0.9 -0.9 H 2.3 C 1.8 4.6 1.3 5 1.3 5.5 v 12.1 c 0 0.5 0.4 0.9 0.9 0.9 h 10.6 c 0.4 0 0.7 0.3 0.7 0.7 C 13.6 19.6 13.3 19.9 12.9 19.9 Z" />
+<g>
+    <path d="M 21.9 21.1 h -5.5 c -0.7 0 -1.3 -0.6 -1.3 -1.3 v -4.2 c 0 -0.7 0.6 -1.3 1.3 -1.3 h 5.5 c 0.7 0 1.3 0.6 1.3 1.3 v 4.2 C 23.3 20.5 22.7 21.1 21.9 21.1 Z M 16.4 15.6 v 4.2 h 5.5 l 0 -4.2 H 16.4 Z" />
+    <path d="M 21 15.2 c -0.4 0 -0.7 -0.3 -0.7 -0.7 v -2.4 c 0 -0.6 -0.6 -1.2 -1.2 -1.2 c -0.6 0 -1.2 0.6 -1.2 1.2 v 2.4 c 0 0.4 -0.3 0.7 -0.7 0.7 c -0.4 0 -0.7 -0.3 -0.7 -0.7 v -2.4 c 0 -1.4 1.2 -2.6 2.6 -2.6 c 1.4 0 2.6 1.2 2.6 2.6 v 2.4 C 21.7 14.9 21.4 15.2 21 15.2 Z" />
+    <circle cx="19.2" cy="17.7" r="0.5" />
+</g>
+<path d="M 10.1 16.9 H 4 c -0.3 0 -0.5 -0.3 -0.5 -0.5 v -0.2 c 0 -0.3 0.3 -0.5 0.5 -0.5 h 6.1 c 0.3 0 0.5 0.3 0.5 0.5 v 0.2 C 10.6 16.6 10.4 16.9 10.1 16.9 Z" />
+<path d="M 13.5 13.9 H 4 c -0.3 0 -0.5 -0.3 -0.5 -0.5 v -0.2 c 0 -0.3 0.3 -0.5 0.5 -0.5 h 9.4 c 0.3 0 0.5 0.3 0.5 0.5 v 0.2 C 14 13.6 13.7 13.9 13.5 13.9 Z" />
+<path d="M 6.8 10.8 h -2 c -0.8 0 -1.3 -0.6 -1.3 -1.3 v -2 c 0 -0.7 0.6 -1.3 1.3 -1.3 h 2 c 0.7 0 1.3 0.6 1.3 1.3 v 2 C 8.1 10.2 7.5 10.8 6.8 10.8 Z M 4.8 7.5 v 2 h 1.9 l 0 -2 H 4.8 Z" />
+</svg>
+</mark>
+            <h4 class="c-helplinks__text">
+            Paiement sécurisé
+        </h4>
+        </a>
+    </li>
+    </ul>
+        <p class="u-txt-center u-hyphen-initial">Covid 19 – Les délais de livraison peuvent être exceptionnellement rallongés.</p>
+</div>
+        </section>
+
+        
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '{your-app-id}',
+      cookie     : true,
+      xfbml      : true,
+      version    : '{api-version}'
+    });
+      
+    FB.AppEvents.logPageView();   
+      
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "https://connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+
+{% endblock %}
+{%block image%}
+{%endblock%}

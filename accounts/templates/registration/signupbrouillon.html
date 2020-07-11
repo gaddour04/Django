@@ -1,0 +1,32 @@
+<div class="col-4" >
+<form method="POST" class="form-group">
+	{% csrf_token %}
+	{{form|crispy}}
+	<input class="btn btn-secondary" type="submit" value="Login">
+		
+</form>
+</div>
+
+<form method="post" >
+    {% csrf_token %}
+    <div class="row">
+      <div class="col-4">
+        {{ form.username|as_crispy_field }}
+      </div>
+      <div class="col-4">
+        {{ form.email|as_crispy_field }}
+      </div>
+    </div>
+    {{ form.first_name|as_crispy_field }}
+    {{ form.last_name|as_crispy_field }}
+    {{ form.password1|as_crispy_field }}
+    {{ form.password2|as_crispy_field }}
+    <button type="submit" class="btn btn-success">Save Product</button>
+
+  </form>
+  <br>
+  <br>
+  <hr>
+
+
+  {{ form.username.label_tag }}
